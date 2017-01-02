@@ -14,13 +14,9 @@
             </span>
             <div class="nav-right nav-menu">
               <span class="nav-item">
-                <a class="button is-light is-outlined" href="">
+                <a class="button is-light is-outlined" href="https://github.com/chenz24/vue-blu" target="_blank">
                   <span class="icon"><i class="fa fa-github"></i></span>
                   <span>GitHub</span>
-                </a>
-                <a class="button is-primary is-inverted" href="">
-                  <span class="icon"><i class="fa fa-download"></i></span>
-                  <span>Download</span>
                 </a>
               </span>
             </div>

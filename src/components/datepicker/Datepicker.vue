@@ -51,25 +51,21 @@ export default {
 
   methods: {
     changeVal() {
-      console.log(this.interVal);
       this.$emit('input', this.interVal);
     },
     handleClear() {
-      console.log('clear');
       this.flatPickr && this.flatPickr.clear();
     },
   },
 
   watch: {
     interVal(val) {
-      console.log(val);
       this.interVal = val;
       this.$emit('input', this.interVal);
     },
   },
 
   mounted() {
-    console.log(this.class);
     const pickrEl = this.$refs.pickrInput;
     this.flatPickr = new Flatpickr(pickrEl, this.options);
   },

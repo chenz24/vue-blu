@@ -14,7 +14,7 @@
 </summary>
 
 ```html
-<modal title="Modal!" :width="320" :is-show="isShow" transition="fadeDown" @close="isShow=false">
+<modal title="Modal!" :width="520" :is-show="isShow" transition="fadeDown" @close="isShow=false">
   <h4>Text in a modal</h4>
   <p>
     Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem. Praesent commodo cursus magna,
