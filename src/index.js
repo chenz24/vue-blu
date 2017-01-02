@@ -62,8 +62,7 @@ const components = {
 };
 
 export default {
-  install(Vue, options) {
-    console.log(options);
+  install(Vue, options) {// eslint-disable-line
     Object.keys(components).forEach(key => Vue.component(key, components[key]));
 
     Vue.prototype.$notify = Notify;
