@@ -1,0 +1,35 @@
+//
+// Variables
+// --------------------------------------------------
+
+// init
+// init
+$blue: #3c81df;
+$turquoise: #00c0ef;
+$red: #f56954;
+$green: #6cc788;
+$orange: #f2a654;
+$purple: #926dde;
+$yellow: #f39c12;
+
+$background-color: #fff;
+
+$family-sans-serif: "Alright Sans LP", "Avenir Next", "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Source Han Sans SC", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi MicroHei", sans-serif;
+
+
+// Override
+$primary: $blue;
+$info: $turquoise;
+$danger: $red;
+$warning: $yellow;
+$success: $green;
+
+$family-primary: $family-sans-serif;
+
+$body-background: $background-color;
+
+// Font Colors
+$font-light:  #9e9e9e;
+$font:        #76838f;
+$font-dark:   #5e6a76;
+$font-darker: #212121;

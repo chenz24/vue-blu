@@ -1,0 +1,7 @@
+.checkbox, .radio{
+  &.is-disabled{
+    opacity: .6;
+    cursor: not-allowed;
+    color: inherit;
+  }
+}
