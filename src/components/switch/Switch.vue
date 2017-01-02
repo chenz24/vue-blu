@@ -1,6 +1,6 @@
 <template>
   <label class="switch-wrap" @click.prevent="toggle" :class="[{'is-disabled': disabled}, sizeClass]">
-    <input type="checkbox" style="display: none" :checked="on">
+    <input type="checkbox" style="display: none" :checked="on" :name="name">
     <span class="switchery" :class="[{'on': on}, typeClass, sizeClass, {'has-text': hasText}]">
       <small class="switcher"></small>
       <span class="text">{{ showText }}</span>
@@ -68,7 +68,6 @@ export default {
     } else {
       this.showText = this.offText;
     }
-    console.log(this.value);
   },
 };
 </script>
