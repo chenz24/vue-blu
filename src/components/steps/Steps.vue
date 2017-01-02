@@ -20,9 +20,9 @@
     <div class="step-content is-flex">
       <slot></slot>
     </div>
-    <div class="step-footer has-text-right">
-      <button class="button is-primary" @click="prev">Prev</button>
-      <button class="button is-primary" @click="next">Next</button>
+    <div class="step-footer has-text-right" v-if="showFooter">
+      <button class="button is-primary" @click="prev">{{ prevText }}</button>
+      <button class="button is-primary" @click="next">{{ nextText }}</button>
     </div>
   </div>
 </template>
@@ -36,6 +36,26 @@ export default {
     current: {
       type: Number,
       default: 0,
+    },
+    prevText: {
+      type: String,
+      default: 'Prev',
+    },
+    nextText: {
+      type: String,
+      default: 'Next',
+    },
+    onPrev: {
+      type: Function,
+      default() {},
+    },
+    onNext: {
+      type: Function,
+      default() {},
+    },
+    showFooter: {
+      type: Boolean,
+      default: true,
     },
   },
 
@@ -52,6 +72,12 @@ export default {
 //
 //    },
 //  },
+  watch: {
+    current(val) {
+      this.currentIndex = val;
+      this.setActiveIndex(this.currentIndex);
+    },
+  },
 
   methods: {
     setActiveIndex(index) {
@@ -67,18 +93,19 @@ export default {
       if (this.currentIndex < this.$children.length) {
         this.currentIndex += 1;
         this.setActiveIndex(this.currentIndex);
+        this.onNext(this.currentIndex);
       }
     },
     prev() {
       if (this.currentIndex > 0) {
         this.currentIndex -= 1;
         this.setActiveIndex(this.currentIndex);
+        this.onPrev(this.currentIndex);
       }
     },
   },
 
   created() {
-    console.log(this.steps);
     if (this.type === 'pills') {
       const width = `${parseInt(100 / this.steps.length, 10)}%`;
       this.stepStyle['width'] = width;
