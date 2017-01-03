@@ -7,6 +7,10 @@
 export default {
   props: {
     value: Array,
+    onChange: {
+      type: Function,
+      default() {},
+    },
   },
 
   data() {
@@ -22,14 +26,14 @@ export default {
       this.$children.forEach((child) => {
         child.realVal && this.checkedList.push(child.realVal);
       });
-      console.log();
       this.$emit('input', this.checkedList);
+      this.onChange(this.checkedList);
     },
     initChecked() {
       this.$children.forEach((child) => {
         if (this.value.indexOf(child.val) >= 0) {
-          console.log(child);
           child.isChecked = true;
+          child.realVal = child.val;
         }
       });
     },

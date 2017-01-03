@@ -1,7 +1,7 @@
 <template>
   <label class="checkbox blu-checkbox" @click.prevent="toggle" :class="[{'on': isChecked}, typeClass, {'is-disabled': disabled}]">
     <input type="checkbox" :name="name" :checked="isChecked" :value="val" ref="checkbox" :disabled="disabled" v-model="model">
-    <span>{{ label }}</span>
+    <span><slot></slot></span>
   </label>
 </template>
 <script>
