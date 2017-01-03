@@ -7,6 +7,46 @@
 <script>
 export default {
   name: 'app',
+  methods: {
+    // reference from https://github.com/ElemeFE/element/blob/dev/examples/app.vue#L150
+    reRenderAnchor() {
+      const anchors = document.querySelectorAll('.header-anchor');
+      console.log(anchors);
+      const basePath = window.location.href.split('#').splice(0, 2).join('#');
+
+      [].slice.call(anchors).forEach((a) => {
+        const href = a.getAttribute('href');
+        a.href = basePath + href;
+      });
+    },
+    goAnchor() {
+      if (window.location.href.match(/#/g).length > 1) {
+        const anchor = window.location.href.match(/#[^#]+$/g);
+        if (!anchor) return;
+        const elm = document.querySelector(anchor[0]);
+        if (!elm) return;
+        setTimeout(() => {
+          document.documentElement.scrollTop = document.body.scrollTop = elm.offsetTop + 120;
+        }, 50);
+      }
+    },
+  },
+
+  created() {
+    window.addEventListener('hashchange', () => {
+      if (window.location.href.match(/#/g).length < 2) {
+        document.documentElement.scrollTop = document.body.scrollTop = 0;
+        this.reRenderAnchor();
+      } else {
+        this.goAnchor();
+      }
+    });
+  },
+
+  mounted() {
+    this.reRenderAnchor();
+    this.goAnchor();
+  },
 };
 </script>
 
