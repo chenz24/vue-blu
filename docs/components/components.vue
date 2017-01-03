@@ -76,7 +76,7 @@
                 <ul class="menu-list">
                   <li><router-link to="/components/form" exact>Form 表单</router-link></li>
                   <li><router-link to="/components/inputnumber" exact>InputNumber 数字输入</router-link></li>
-                  <li><a href="#">Radio</a></li>
+                  <li><router-link to="/components/radio" exact>Radio 单选框</router-link></li>
                   <li><router-link to="/components/checkbox" exact>Checkbox 复选框</router-link></li>
                   <li><router-link to="/components/switch" exact>Switch 开关</router-link></li>
                   <!--<li><a href="#">Select</a></li>-->

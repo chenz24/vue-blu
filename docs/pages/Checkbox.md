@@ -84,7 +84,7 @@ export default {
   data() {
     return {
       checkedNames: '',
-      groupVal: ['kobe'],
+      groupVal: ['Kobe'],
     };
   },
   watch: {

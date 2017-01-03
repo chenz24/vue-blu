@@ -52,7 +52,7 @@ zoomLeft
 zoomRight
 zoomUp
  */
-@import '../scss/animate.css';
+@import '../scss/animate.scss';
 
 html{
   overflow-x: visible;

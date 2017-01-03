@@ -1,6 +1,6 @@
 <template>
-  <label class="checkbox blu-checkbox" @click.prevent="toggle" :class="[{'on': isChecked}, typeClass, {'is-disabled': disabled}]">
-    <input type="checkbox" :name="name" :checked="isChecked" :value="val" ref="checkbox" :disabled="disabled" v-model="model">
+  <label class="radio blu-radio" @click.prevent="toggle" :class="[{'on': isChecked}, typeClass, {'is-disabled': disabled}]">
+    <input type="radio" :name="name" :checked="isChecked" :value="val" ref="checkbox" :disabled="disabled" v-model="model">
     <span><slot></slot></span>
   </label>
 </template>
@@ -35,17 +35,20 @@ export default {
       if (this.type) return `is-${this.type}`;
       return null;
     },
+    index() {
+      return this.$parent.radioItems ? this.$parent.radioItems.indexOf(this) : null;
+    },
   },
 
   watch: {
-//    realVal(val, oldVal) {
-//      console.log('new', val);
-//      console.log('old', oldVal);
-//    },
+    value() {
+      this.updateValue();
+    },
   },
 
   methods: {
     toggle() {
+      if (this.isChecked) return;
       this.isChecked = !this.isChecked;
 
       if (this.$refs.checkbox.value && !this.isChecked) {
@@ -62,8 +65,11 @@ export default {
         this.$emit('input', this.realVal);
       }
 
-      this.$parent.isCheckboxGroup && this.$parent.updateValue();
+      this.$parent.isRadioGroup && this.$parent.updateValue(this.index);
       this.onChange(this.isChecked);
+    },
+    updateValue() {
+//      console.log(this.value);
     },
   },
 
@@ -80,10 +86,10 @@ export default {
 <style lang="scss">
 @import "../../scss/variables.scss";
 
-.blu-checkbox{
+.blu-radio{
   padding-left: 20px;
   user-select: none;
-  input[type="checkbox"]{
+  input[type="radio"]{
     cursor: pointer;
     opacity: 0;
     outline: none!important;
@@ -91,8 +97,8 @@ export default {
   }
   &:before{
     background-color: #ffffff;
-    border-radius: 2px;
-    border: 1px solid gainsboro;
+    border-radius: 100%;
+    border: 2px solid $primary;
     content: "";
     display: inline-block;
     width: 16px;
@@ -105,26 +111,20 @@ export default {
     outline: none !important;
   }
   &.on:after{
-    font: normal normal normal 14px/1 FontAwesome;
-    content: "\f00c";
-    color: #7a7d84;
-    display: inline-block;
-    font-size: 11px;
-    height: 16px;
-    left: 0;
-    padding-left: 3px;
-    padding-top: 1px;
+    content: '';
     position: absolute;
-    top: 2px;
-    width: 16px;
+    width: 0;
+    height: 0;
+    top: 4px;
+    left: 4px;
+    border: 4px solid;
+    border-color: $primary;
+    border-radius: 100%;
     transition: 0.2s ease-in-out;
     -o-transition: 0.2s ease-in-out;
     -webkit-transition: 0.2s ease-in-out;
   }
-  &.is-primary.on:before{
-    background-color: $primary;
-    border-color: $primary;
-  }
+
   &.is-primary.on:after{
     color: #fff;
   }

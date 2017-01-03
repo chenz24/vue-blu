@@ -75,7 +75,6 @@ export default {
     if (this.hasChildren) {
       this.getChildrenStatus();
       if (this.arrowClass === 'fa-caret-right') {
-        console.log(this.$el);
         this.$el.addEventListener('mouseenter', this.toggle);
         this.$el.addEventListener('mouseleave', this.toggle);
       }

@@ -1,7 +1,6 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Blu from '../src';
-// import '../src/scss/blu.scss';
 
 import App from './App';
 import routes from './router.conf';

@@ -11,7 +11,6 @@ export default {
     // reference from https://github.com/ElemeFE/element/blob/dev/examples/app.vue#L150
     reRenderAnchor() {
       const anchors = document.querySelectorAll('.header-anchor');
-      console.log(anchors);
       const basePath = window.location.href.split('#').splice(0, 2).join('#');
 
       [].slice.call(anchors).forEach((a) => {
@@ -26,7 +25,7 @@ export default {
         const elm = document.querySelector(anchor[0]);
         if (!elm) return;
         setTimeout(() => {
-          document.documentElement.scrollTop = document.body.scrollTop = elm.offsetTop + 120;
+          document.documentElement.scrollTop = document.body.scrollTop = elm.offsetTop + 80;
         }, 50);
       }
     },

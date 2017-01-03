@@ -9,6 +9,7 @@ html{
   overflow-y: visible;
 }
 
+@import './variables';
 @import '~bulma';
 
 @import './elements/_all';

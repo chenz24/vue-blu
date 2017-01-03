@@ -31,7 +31,7 @@ export default {
     },
     initChecked() {
       this.$children.forEach((child) => {
-        if (this.value.indexOf(child.val) >= 0) {
+        if (this.value && this.value.indexOf(child.val) >= 0) {
           child.isChecked = true;
           child.realVal = child.val;
         }

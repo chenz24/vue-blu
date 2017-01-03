@@ -93,6 +93,9 @@ export default [
         path: 'checkbox',
         component: require('./pages/Checkbox.md'),
       }, {
+        path: 'radio',
+        component: require('./pages/Radio.md'),
+      }, {
         path: 'switch',
         component: require('./pages/Switch.md'),
       }, {
