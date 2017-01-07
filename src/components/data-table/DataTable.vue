@@ -7,7 +7,7 @@
         <colgroup>
           <col v-for="col in cols" :width="col">
         </colgroup>
-        <table-header :params="params" :checkable="checkable"></table-header>
+        <table-header :data="data"></table-header>
       </table>
     </div>
 

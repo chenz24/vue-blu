@@ -11,6 +11,10 @@ export default [
         name: 'changelog',
         path: 'changelog',
         component: require('./pages/changelog.md'),
+      }, {
+        name: 'customize',
+        path: 'customize',
+        component: require('./pages/Customize.md'),
       },
     ],
   },

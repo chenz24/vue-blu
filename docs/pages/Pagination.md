@@ -60,7 +60,7 @@
 <summary>
   #### 配置
   * 通过 `size-options` 设置分页大小选项
-  * `on-change` 设置分页回调
+  * `change` 设置分页回调
 </summary>
 
 ```html
@@ -68,7 +68,7 @@
 <br>
 <pagination :total="800" :page-size="15" :size-options="[15, 30, 50]"></pagination>
 <br>
-<pagination :total="50" :on-change="pageCb"></pagination>
+<pagination :total="50" :change="pageCb"></pagination>
 <script>
   export default {
     methods: {
@@ -87,12 +87,13 @@
 
 | 成员        | 说明           | 类型               | 默认值       |
 |------------|----------------|--------------------|--------------|
-| page-size    | 每页条数 | Number | 无    |
+| page-size    | 每页条数 | Number | 10    |
 | current | 当前页数 | Number | 1 |
-| size | 分页师傅是迷你型，可选值为`small`  | String | 无 |
+| size | 分页是否是迷你型，可选值为`small`  | String | 无 |
 | total | 数据总数 | Number | 无   |
 | layout | 分页项目及布局  | String | `'total, pager, sizer, jumper'`   |
-| on-change | 分页回调  | Function | 无   |
+| align | 对齐方式，默认居中，可选值 `right` `left` | String |  无  |
+| change | 分页回调  | Function | 无   |
 | size-options | 指定每页显示多少条  | Array | 无   |
 
 <script>

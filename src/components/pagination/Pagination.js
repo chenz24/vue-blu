@@ -13,7 +13,11 @@ export default {
       default: 1,
     },
     total: Number,
-    onChange: {
+    change: {
+      type: Function,
+      default() {},
+    },
+    pageSizeChange: {
       type: Function,
       default() {},
     },
@@ -32,6 +36,7 @@ export default {
         return [10, 20, 30, 40, 50];
       },
     },
+    align: String,
   },
 
   data() {
@@ -59,7 +64,10 @@ export default {
       return this.calcTotalPage();
     },
     sizeClass() {
-      return this.size === 'small' ? 'is-small' : null;
+      return this.size === 'small' ? 'is-small' : '';
+    },
+    alignClass() {
+      return this.align ? `is-${this.align}` : '';
     },
   },
 
@@ -70,7 +78,7 @@ export default {
     handleChangePage(p) {
       if (p !== this.interCurrent) {
         this.interCurrent = p;
-        this.onChange(p);
+        this.change(p);
       }
     },
     handleJumpPrev() {
@@ -105,6 +113,7 @@ export default {
       const pageSize = e.target.value;
       this.interPageSize = pageSize;
       this.totalPage = this.calcTotalPage(pageSize);
+      this.pageSizeChange(this.current, pageSize);
     },
   },
 
@@ -113,6 +122,7 @@ export default {
   },
 
   render(h) {// eslint-disable-line
+    const alignClass = this.alignClass;
     const sizeClass = this.sizeClass;
     const pagerList = [];
     let total = '';
@@ -131,7 +141,7 @@ export default {
         for (let i = 1; i <= this.totalPage; i++) {
           const active = interCurrent === i;
           pagerList.push(
-            <Pager pageNo={i} active={active} size={this.size} onClick={this.handleChangePage.bind(this, i)}/>
+            <Pager pageNo={i} active={active} size={sizeClass} onClick={this.handleChangePage.bind(this, i)}/>
           );
         }
       } else {
@@ -221,7 +231,7 @@ export default {
     const components = this.layout.split(',');
 
     return (
-      <nav class={`pagination ${sizeClass}`}>
+      <nav class={`pagination ${sizeClass} ${alignClass}`}>
         {components.map(item => items[item.trim()])}
       </nav>
     );

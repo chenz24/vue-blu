@@ -10,21 +10,17 @@
 </summary>
 
 ```html
-<data-table :data="dataSource" checkable>
+<data-table :data="dataSource" >
   <table-column label="姓名" field="name"></table-column>
   <table-column label="年龄" field="age"></table-column>
-  <table-column label="label" inline-template>
-    <div>
-      <tag type="primary">{{ row.name }}</tag>
-      <a href="">{{ row.name }}</a>
-    </div>
-  </table-column>
-  <table-column field="age" label="年龄">
+  <table-column label="label">
     <template scope="row">
       <span>hello from parent</span>
-      <span>{{ row.address }}</span>
+      <span>{{ row.age }}</span>
+      <tag>{{ row.address }}</tag>
     </template>
   </table-column>
+  <table-column field="age" label="年龄"></table-column>
 </data-table>
 ```
 :::
@@ -110,26 +106,6 @@ export default {
         age: 42,
       }],
 
-      columns: [{
-        title: '序号',
-        dataIndex: 'name',
-        key: 'order',
-        sorter: true,
-        width: 120,
-      }, {
-        title: '姓名',
-        dataIndex: 'name',
-        key: 'name',
-      }, {
-        title: '年龄',
-        dataIndex: 'age',
-        key: 'age',
-        sorter: true,
-      }, {
-        title: '住址',
-        dataIndex: 'address',
-        key: 'address',
-      }],
     }
   }
 };

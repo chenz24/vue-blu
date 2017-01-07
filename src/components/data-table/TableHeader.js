@@ -21,20 +21,15 @@ export default {
   render(h) {// eslint-disable-line
     return (
       <thead>
-        <tr>
-          {
-            this.checkable
-              ? <th><input type="checkbox"/></th>
-              : ''
-          }
-          {
-            this._l(this.cols, (column, cellIndex) =>
-              <th key={cellIndex}>
-                {column.label}
-              </th>
-            )
-          }
-        </tr>
+      <tr>
+        {
+          this._l(this.cols, (column, cellIndex) =>
+            <td key={cellIndex}>
+              {column.label}
+            </td>
+          )
+        }
+      </tr>
       </thead>
     );
   },

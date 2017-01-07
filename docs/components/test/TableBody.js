@@ -3,6 +3,12 @@ export default {
   props: {
     columns: Array,
     data: Array,
+    checkable: Boolean,
+    showIndex: Boolean,
+    state: {
+      type: Object,
+      default() {},
+    },
   },
   data() {
     return {
@@ -19,6 +25,12 @@ export default {
       console.log(newVal);
     },
   },
+  methods: {
+    handleToggleSelect(row, value) {
+      console.log(value);
+      console.log(row);
+    },
+  },
   created() {
 
   },
@@ -28,11 +40,20 @@ export default {
         {
           this._l(this.data, (row, $index) =>
             <tr>
-              {this._l(this.cols, (column, cellIndex) =>
-                <td key={`${$index}${cellIndex}`}>
-                  {column.renderCell.call(this._renderProxy, h, { row, column, $index, store: this.store, _self: this.context || this.$parent.$vnode.context })}
-                </td>
-              )}
+              {
+                this.checkable ? <th><checkbox change={value => this.handleToggleSelect(row, value)}/></th> : ''
+              }
+              {
+                this.showIndex ? <th>{$index + 1}</th> : ''
+              }
+              {this._l(this.cols, (column, cellIndex) => {
+                if (!column.visible) return null;
+                return (
+                  <td key={`${$index}${cellIndex}`}>
+                    {column.renderCell.call(this._renderProxy, h, { row, column, $index, store: this.store, _self: this.context || this.$parent.$vnode.context })}
+                  </td>
+                );
+              })}
             </tr>
           )
         }

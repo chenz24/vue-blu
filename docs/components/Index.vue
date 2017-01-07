@@ -45,6 +45,7 @@
           <div class="column is-2 side-nav">
             <aside class="list-group">
               <router-link to="/" class="list-group-item" exact>快速上手</router-link>
+              <router-link to="/customize" class="list-group-item" exact>定制化</router-link>
               <router-link to="/changelog" class="list-group-item" exact>更新日志</router-link>
               <router-link to="/components" class="list-group-item" exact>Components</router-link>
               <div class="menu">

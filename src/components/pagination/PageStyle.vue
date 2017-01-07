@@ -4,6 +4,12 @@
   &.is-small{
   	font-size: 12px;
   }
+  &.is-left{
+    justify-content: flex-start;
+  }
+  &.is-right{
+    justify-content: flex-end;
+  }
   ul{
   	flex-grow: 0;
   	i{

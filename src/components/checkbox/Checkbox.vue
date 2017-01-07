@@ -1,6 +1,11 @@
 <template>
-  <label class="checkbox blu-checkbox" @click.prevent="toggle" :class="[{'on': isChecked}, typeClass, {'is-disabled': disabled}]">
-    <input type="checkbox" :name="name" :checked="isChecked" :value="val" ref="checkbox" :disabled="disabled" v-model="model">
+  <label class="checkbox blu-checkbox" value="" @click.prevent="toggle" :class="[{'on': isChecked}, typeClass, {'is-disabled': disabled}]">
+    <input type="checkbox"
+           :name="name"
+           ref="checkbox"
+           :checked="isChecked"
+           :disabled="disabled"
+           >
     <span><slot></slot></span>
   </label>
 </template>
@@ -17,7 +22,7 @@ export default {
     checked: Boolean,
     value: {},
     val: [String, Number, Boolean],
-    onChange: {
+    change: {
       type: Function,
       default() {},
     },
@@ -45,7 +50,7 @@ export default {
   },
 
   methods: {
-    toggle() {
+    toggle(e) {
       this.isChecked = !this.isChecked;
 
       if (this.$refs.checkbox.value && !this.isChecked) {
@@ -61,9 +66,8 @@ export default {
         this.realVal = false;
         this.$emit('input', this.realVal);
       }
-
       this.$parent.isCheckboxGroup && this.$parent.updateValue();
-      this.onChange(this.isChecked);
+      this.change(e);
     },
   },
 

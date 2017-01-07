@@ -32,14 +32,9 @@ export default {
       {
         this._l(this.data, (row, $index) =>
           <tr>
-            {
-              this.checkable
-                ? <th><input type="checkbox"/></th>
-                : ''
-            }
             {this._l(this.cols, (column, cellIndex) =>
               <td key={`${$index}${cellIndex}`}>
-                {column.renderCell.call(this._renderProxy, h, { row, column, $index, _self: this.context || this.$parent.$vnode.context })}
+                {column.renderCell.call(this._renderProxy, h, { row, column, $index, store: this.store, _self: this.context || this.$parent.$vnode.context })}
               </td>
             )}
           </tr>

@@ -4,6 +4,7 @@
  * Released under the MIT License.
  * Documentation: https://chenz24.github.io/vue-blu/#/
  */
+import Style from './components/styles';
 import Affix from './components/affix';
 import Tooltip from './components/tooltip';
 import Popover from './components/popover';
@@ -20,7 +21,7 @@ import { Menus, MenuItem } from './components/menu';
 import Aside from './components/aside';
 import PopConfirm from './components/pop-confirm';
 import ScrollTo from './components/scroll-to';
-import { DataTable, TableColumn } from './components/data-table';
+// import { DataTable, TableColumn } from './components/data-table';
 import { Checkbox, CheckboxGroup } from './components/checkbox';
 import { Radio, RadioGroup, RadioButton } from './components/radio';
 import Switch from './components/switch';
@@ -31,9 +32,10 @@ import Datepicker from './components/datepicker';
 
 import Notify from './components/notify';
 import MessageModal from './components/message-modal';
-import './scss/main.scss';
+// import './scss/main.scss';
 
 const components = {
+  Style,
   Affix,
   Tooltip,
   Popover,
@@ -55,8 +57,8 @@ const components = {
   bAside: Aside,
   PopConfirm,
   ScrollTo,
-  DataTable,
-  TableColumn,
+  // DataTable,
+  // TableColumn,
   Checkbox,
   CheckboxGroup,
   Radio,

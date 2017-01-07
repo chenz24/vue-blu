@@ -15,6 +15,10 @@ export default {
     return flag;
   },
 
+  isFunction(obj) {
+    return !!(obj && obj.constructor && obj.call && obj.apply);
+  },
+
   getScroll(target, top) {
     if (typeof window === 'undefined') {
       return 0;
@@ -32,4 +36,5 @@ export default {
 
     return ret;
   },
+
 };

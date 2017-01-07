@@ -10,7 +10,7 @@
   * 通过 `label` 设置菜单组的标签
   * `icon` 设置菜单项目的图标
   * 设置 `to` 生成vue-router的链接
-  * 设置 `click` 为菜单项添加点击事件
+  * 设置 `click` 为菜单项添加点击事件,如果设置了此项 `to` 参数失效
   * `is-active` 设置菜单项是否是激活状态
   * menu 标签可嵌套
 </summary>
@@ -111,5 +111,5 @@
 |------------|----------------|--------------------|--------------|
 | icon    | 图标 | String | 无    |
 | to    | vue-router的路径，同vue-router的`to`参数 | String | 无    |
-| click    | 点击事件 | Function | 无    |
+| click    | 点击事件，设置此项 `to` 将失效 | Function | 无    |
 | is-active | 菜单是否激活 | Boolean | false    |
