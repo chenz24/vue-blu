@@ -1,6 +1,6 @@
 ## Icon 图标库
 
-Vue-Blu的图标库采用了被广泛使用的 [Fontawesome](http://fontawesome.io/)。图标库没有写成组件形式，通过原生标签即可调用
+Vue-Blu的图标库采用了被广泛使用的 [Fontawesome](http://fontawesome.io/)。图标库没有写成Vue组件的形式，通过原生标签即可调用
 
 ### 代码演示
 

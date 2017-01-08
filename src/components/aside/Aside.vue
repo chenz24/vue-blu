@@ -3,7 +3,7 @@
     <div class="aside" v-show="isActive" :class="[{ 'is-active': isActive }, placementClass]">
       <div class="modal-background" v-if="backdrop" @click="backdropClose"></div>
       <transition :name="transitionName">
-        <div class="modal-card" v-show="isActive">
+        <div class="modal-card" :style="modalWidth" v-show="isActive">
         <header class="modal-card-head aside-header" v-if="showHeader">
           <slot name="header">
             <p class="modal-card-title">{{ title }}</p>
@@ -33,7 +33,7 @@ export default {
   props: {
     width: {
       type: Number,
-      default: 400,
+      default: 450,
     },
     placement: {
       type: String,
@@ -87,6 +87,7 @@ export default {
   }
   .modal-card{
     width: 450px;
+    max-width: 100%;
     margin: 0;
     position: absolute;
     left: 0;

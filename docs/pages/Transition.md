@@ -8,6 +8,7 @@
 <summary>
   #### 基本
   * 通过vue的`transition`组件来设置。Vue-Blu部分组件可使用`transition`参数设置，如modal、notify等，具体参考组件文档
+  * 过渡效果的`animation-duration` 可通过覆盖`$transition-speed`变量实现自定义
 </summary>
 
 ```html

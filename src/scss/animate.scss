@@ -5,6 +5,7 @@
  * Released under the MIT License.
  * Documentation: https://github.com/asika32764/vue2-animate
  */
+$transition-speed: .3s !default
 @keyframes bounceIn {
   from,
   20%,
@@ -206,7 +207,7 @@
 .bounceIn,
 .bounce-leave-active,
 .bounceOut {
-  animation-duration: .3s;
+  animation-duration: $transition-speed;
   animation-fill-mode: both;
 }
 .bounce-enter-active,
@@ -221,7 +222,7 @@
 .bounceInUp,
 .bounceUp-leave-active,
 .bounceOutUp {
-  animation-duration: .3s;
+  animation-duration: $transition-speed;
   animation-fill-mode: both;
 }
 .bounceUp-enter-active,
@@ -236,7 +237,7 @@
 .bounceInRight,
 .bounceRight-leave-active,
 .bounceOutRight {
-  animation-duration: .3s;
+  animation-duration: $transition-speed;
   animation-fill-mode: both;
 }
 .bounceRight-enter-active,
@@ -251,7 +252,7 @@
 .bounceInLeft,
 .bounceLeft-leave-active,
 .bounceOutLeft {
-  animation-duration: .3s;
+  animation-duration: $transition-speed;
   animation-fill-mode: both;
 }
 .bounceLeft-enter-active,
@@ -266,7 +267,7 @@
 .bounceInDown,
 .bounceDown-leave-active,
 .bounceOutDown {
-  animation-duration: .3s;
+  animation-duration: $transition-speed;
   animation-fill-mode: both;
 }
 .bounceDown-enter-active,
@@ -449,7 +450,7 @@
 .fadeIn,
 .fade-leave-active,
 .fadeOut {
-  animation-duration: .3s;
+  animation-duration: $transition-speed;
   animation-fill-mode: both;
 }
 .fade-enter-active,
@@ -464,7 +465,7 @@
 .fadeInUpBig,
 .fadeUpBig-leave-active,
 .fadeOutUpBig {
-  animation-duration: .3s;
+  animation-duration: $transition-speed;
   animation-fill-mode: both;
 }
 .fadeUpBig-enter-active,
@@ -479,7 +480,7 @@
 .fadeInUp,
 .fadeUp-leave-active,
 .fadeOutUp {
-  animation-duration: .3s;
+  animation-duration: $transition-speed;
   animation-fill-mode: both;
 }
 .fadeUp-enter-active,
@@ -494,7 +495,7 @@
 .fadeInRightBig,
 .fadeRightBig-leave-active,
 .fadeOutRightBig {
-  animation-duration: .3s;
+  animation-duration: $transition-speed;
   animation-fill-mode: both;
 }
 .fadeRightBig-enter-active,
@@ -509,7 +510,7 @@
 .fadeInRight,
 .fadeRight-leave-active,
 .fadeOutRight {
-  animation-duration: .3s;
+  animation-duration: $transition-speed;
   animation-fill-mode: both;
 }
 .fadeRight-enter-active,
@@ -524,7 +525,7 @@
 .fadeInLeftBig,
 .fadeLeftBig-leave-active,
 .fadeOutLeftBig {
-  animation-duration: .3s;
+  animation-duration: $transition-speed;
   animation-fill-mode: both;
 }
 .fadeLeftBig-enter-active,
@@ -539,7 +540,7 @@
 .fadeInLeft,
 .fadeLeft-leave-active,
 .fadeOutLeft {
-  animation-duration: .3s;
+  animation-duration: $transition-speed;
   animation-fill-mode: both;
 }
 .fadeLeft-enter-active,
@@ -554,7 +555,7 @@
 .fadeInDownBig,
 .fadeDownBig-leave-active,
 .fadeOutDownBig {
-  animation-duration: .3s;
+  animation-duration: $transition-speed;
   animation-fill-mode: both;
 }
 .fadeDownBig-enter-active,
@@ -569,7 +570,7 @@
 .fadeInDown,
 .fadeDown-leave-active,
 .fadeOutDown {
-  animation-duration: .3s;
+  animation-duration: $transition-speed;
   animation-fill-mode: both;
 }
 .fadeDown-enter-active,
@@ -699,7 +700,7 @@
 .rotateIn,
 .rotate-leave-active,
 .rotateOut {
-  animation-duration: .3s;
+  animation-duration: $transition-speed;
   animation-fill-mode: both;
 }
 .rotate-enter-active,
@@ -714,7 +715,7 @@
 .rotateInUpRight,
 .rotateUpRight-leave-active,
 .rotateOutUpRight {
-  animation-duration: .3s;
+  animation-duration: $transition-speed;
   animation-fill-mode: both;
 }
 .rotateUpRight-enter-active,
@@ -729,7 +730,7 @@
 .rotateInUpLeft,
 .rotateUpLeft-leave-active,
 .rotateOutUpLeft {
-  animation-duration: .3s;
+  animation-duration: $transition-speed;
   animation-fill-mode: both;
 }
 .rotateUpLeft-enter-active,
@@ -744,7 +745,7 @@
 .rotateInDownRight,
 .rotateDownRight-leave-active,
 .rotateOutDownRight {
-  animation-duration: .3s;
+  animation-duration: $transition-speed;
   animation-fill-mode: both;
 }
 .rotateDownRight-enter-active,
@@ -759,7 +760,7 @@
 .rotateInDownLeft,
 .rotateDownLeft-leave-active,
 .rotateOutDownLeft {
-  animation-duration: .3s;
+  animation-duration: $transition-speed;
   animation-fill-mode: both;
 }
 .rotateDownLeft-enter-active,
@@ -846,7 +847,7 @@
 .slideIn,
 .slide-leave-active,
 .slideOut {
-  animation-duration: .3s;
+  animation-duration: $transition-speed;
   animation-fill-mode: both;
 }
 .slide-enter-active,
@@ -861,7 +862,7 @@
 .slideInUp,
 .slideUp-leave-active,
 .slideOutUp {
-  animation-duration: .3s;
+  animation-duration: $transition-speed;
   animation-fill-mode: both;
 }
 .slideUp-enter-active,
@@ -876,7 +877,7 @@
 .slideInRight,
 .slideRight-leave-active,
 .slideOutRight {
-  animation-duration: .3s;
+  animation-duration: $transition-speed;
   animation-fill-mode: both;
 }
 .slideRight-enter-active,
@@ -891,7 +892,7 @@
 .slideInLeft,
 .slideLeft-leave-active,
 .slideOutLeft {
-  animation-duration: .3s;
+  animation-duration: $transition-speed;
   animation-fill-mode: both;
 }
 .slideLeft-enter-active,
@@ -906,7 +907,7 @@
 .slideInDown,
 .slideDown-leave-active,
 .slideOutDown {
-  animation-duration: .3s;
+  animation-duration: $transition-speed;
   animation-fill-mode: both;
 }
 .slideDown-enter-active,
@@ -1038,7 +1039,7 @@
 .zoomIn,
 .zoom-leave-active,
 .zoomOut {
-  animation-duration: .3s;
+  animation-duration: $transition-speed;
   animation-fill-mode: both;
 }
 .zoom-enter-active,
@@ -1053,7 +1054,7 @@
 .zoomInUp,
 .zoomUp-leave-active,
 .zoomOutUp {
-  animation-duration: .3s;
+  animation-duration: $transition-speed;
   animation-fill-mode: both;
 }
 .zoomUp-enter-active,
@@ -1068,7 +1069,7 @@
 .zoomInRight,
 .zoomRight-leave-active,
 .zoomOutRight {
-  animation-duration: .3s;
+  animation-duration: $transition-speed;
   animation-fill-mode: both;
 }
 .zoomRight-enter-active,
@@ -1083,7 +1084,7 @@
 .zoomInLeft,
 .zoomLeft-leave-active,
 .zoomOutLeft {
-  animation-duration: .3s;
+  animation-duration: $transition-speed;
   animation-fill-mode: both;
 }
 .zoomLeft-enter-active,
@@ -1098,7 +1099,7 @@
 .zoomInDown,
 .zoomDown-leave-active,
 .zoomOutDown {
-  animation-duration: .3s;
+  animation-duration: $transition-speed;
   animation-fill-mode: both;
 }
 .zoomDown-enter-active,

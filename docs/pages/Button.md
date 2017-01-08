@@ -168,7 +168,7 @@
     <span>Go back</span>
   </a>
   <a class="button is-primary">
-    <span>Go back</span>
+    <span>Go Forward</span>
     <span class="icon is-small"><i class="fa fa-angle-right"></i></span>
   </a>
 </p>
