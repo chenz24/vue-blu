@@ -1,10 +1,13 @@
 <template>
-  <label class="checkbox blu-checkbox" value="" @click.prevent="toggle" :class="[{'on': isChecked}, typeClass, {'is-disabled': disabled}]">
+  <label class="checkbox blu-checkbox" @click.prevent="toggle" :class="[{'on': isChecked}, typeClass, {'is-disabled': disabled}]">
     <input type="checkbox"
            :name="name"
            ref="checkbox"
            :checked="isChecked"
            :disabled="disabled"
+           v-model="realVal"
+           @change="$emit('change', $event)"
+           :value="realVal"
            >
     <span><slot></slot></span>
   </label>
@@ -43,23 +46,25 @@ export default {
   },
 
   watch: {
-//    realVal(val, oldVal) {
-//      console.log('new', val);
-//      console.log('old', oldVal);
-//    },
+    realVal(val) {
+      this.change(val);
+    },
+    checked(val) {
+      this.handleChecked(val);
+    },
   },
 
   methods: {
-    toggle(e) {
+    toggle() {
       this.isChecked = !this.isChecked;
 
-      if (this.$refs.checkbox.value && !this.isChecked) {
+      if (this.val && !this.isChecked) {
         this.realVal = '';
         this.$emit('input', this.realVal);
-      } else if (this.$refs.checkbox.value && this.isChecked) {
-        this.realVal = this.$refs.checkbox.value;
+      } else if (this.val && this.isChecked) {
+        this.realVal = this.val;
         this.$emit('input', this.realVal);
-      } else if (!this.$refs.checkbox.value && this.isChecked) {
+      } else if (!this.val && this.isChecked) {
         this.realVal = true;
         this.$emit('input', this.realVal);
       } else {
@@ -67,7 +72,10 @@ export default {
         this.$emit('input', this.realVal);
       }
       this.$parent.isCheckboxGroup && this.$parent.updateValue();
-      this.change(e);
+//      this.change(e);
+    },
+    handleChecked(isChecked) {
+      this.isChecked = isChecked;
     },
   },
 
@@ -103,9 +111,9 @@ export default {
     height: 16px;
     left: 0;
     position: absolute;
-    transition: 0.2s ease-in-out;
-    -o-transition: 0.2s ease-in-out;
-    -webkit-transition: 0.2s ease-in-out;
+    transition: 0.1s ease-in-out;
+    -o-transition: 0.1s ease-in-out;
+    -webkit-transition: 0.1s ease-in-out;
     outline: none !important;
   }
   &.on:after{
@@ -121,9 +129,9 @@ export default {
     position: absolute;
     top: 2px;
     width: 16px;
-    transition: 0.2s ease-in-out;
-    -o-transition: 0.2s ease-in-out;
-    -webkit-transition: 0.2s ease-in-out;
+    transition: 0.1s ease-in-out;
+    -o-transition: 0.1s ease-in-out;
+    -webkit-transition: 0.1s ease-in-out;
   }
   &.is-primary.on:before{
     background-color: $primary;

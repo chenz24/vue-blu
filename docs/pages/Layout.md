@@ -36,7 +36,7 @@
 ::: demo
 <summary>
   #### 基本
-  * 通过 `is-2` `is-3` `is-4`
+  * 采用12列布局，通过 `is-2` `is-3` `is-4`... 设置column所占的比例
 </summary>
 
 ```html
@@ -102,7 +102,7 @@
     <p class="notification is-warning has-text-centered">1</p>
   </div>
   <div class="column">
-    <p class="notification is-success has-text-centered">1</p>
+    <p class="notification is-success has-text-centerced">1</p>
   </div>
   <div class="column">
     <p class="notification is-warning has-text-centered">1</p>
@@ -267,9 +267,54 @@
 ```
 :::
 
-### offset
+### offset 偏移
+
+::: demo
+<summary>
+  #### 设置偏移
+  * 通过 `is-offset-*` 设置偏移量，如 `is-offset-2`
+</summary>
+
+```html
+<div class="columns">
+  <div class="column is-5 is-offset-2">
+    <p class="notification is-primary has-text-centered"><code>is-5</code></p>
+  </div>
+</div>
+<div class="columns">
+  <div class="column is-4 is-offset-8">
+    <p class="notification is-primary has-text-centered"><code>is-4</code></p>
+  </div>
+</div>
+```
+:::
+
 
 ### 去除间隙
+
+::: demo
+<summary>
+  #### Gapless
+  * 通过设置 `is-gapless` 去除column之间的间隙
+</summary>
+
+```html
+<div class="columns is-gapless">
+  <div class="column">
+    <p class="notification is-info">First column</p>
+  </div>
+  <div class="column">
+    <p class="notification is-success">Second column</p>
+  </div>
+  <div class="column">
+    <p class="notification is-warning">Third column</p>
+  </div>
+  <div class="column">
+    <p class="notification is-danger">Fourth column</p>
+  </div>
+</div>
+```
+:::
 
 ### 更多
 

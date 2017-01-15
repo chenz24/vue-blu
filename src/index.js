@@ -21,7 +21,7 @@ import { Menus, MenuItem } from './components/menu';
 import Aside from './components/aside';
 import PopConfirm from './components/pop-confirm';
 import ScrollTo from './components/scroll-to';
-// import { DataTable, TableColumn } from './components/data-table';
+import { DataTable, Column, TableToolbar } from './components/data-table';
 import { Checkbox, CheckboxGroup } from './components/checkbox';
 import { Radio, RadioGroup, RadioButton } from './components/radio';
 import Switch from './components/switch';
@@ -57,8 +57,9 @@ const components = {
   bAside: Aside,
   PopConfirm,
   ScrollTo,
-  // DataTable,
-  // TableColumn,
+  DataTable,
+  Column,
+  TableToolbar,
   Checkbox,
   CheckboxGroup,
   Radio,

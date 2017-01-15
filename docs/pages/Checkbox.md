@@ -21,6 +21,9 @@
 <br><br>
 <checkbox label="Checkbox" val="john" disabled>Checkbox</checkbox>
 
+<br><br>
+<checkbox label="Checkbox" val="john" @change="changeFunc">Checkbox</checkbox>
+
 <script>
   export default {
     data() {
@@ -70,14 +73,14 @@
 | val | checkbox的value值 | String, Number, Boolean | 无 |
 | disabled | 是否禁用 | Boolean | false   |
 | checked | 是否已选  | Boolean | false   |
-| on-change | 值变化时的回调  | Function | 无   |
+| change | 值变化时的回调  | Function | 无   |
 
 #### checkbox-group
 
 | 成员        | 说明           | 类型               | 默认值       |
-|------------|----------------|--------------------|--------------|
+|------------|----------------|-------------------|--------------|
 | value | 指定选中的选项  | Array | 无   |
-| on-change | 值变化时的回调  | Function | 无   |
+| change | 值变化时的回调  | Function | 无   |
 
 <script>
 export default {
@@ -93,9 +96,9 @@ export default {
     }
   },
   methods: {
-    getVal() {
-
-    }
+    changeFunc(p) {
+      console.log(p);
+    },
   },
 };
 </script>

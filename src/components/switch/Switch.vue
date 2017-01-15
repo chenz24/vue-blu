@@ -5,6 +5,7 @@
       <small class="switcher"></small>
       <span class="text">{{ showText }}</span>
     </span>
+    <slot></slot>
   </label>
 </template>
 <script>
@@ -77,7 +78,7 @@ export default {
 .switch-wrap{
 	position: relative;
 	display: inline-block;
-	padding-left: 56px;
+	padding-left: 60px;
 	min-height: 20px;
 
 	&.is-small{
