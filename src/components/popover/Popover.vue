@@ -55,8 +55,10 @@ export default {
       if (this.trigger !== 'hover') this.isShow = false;
       this.timer = setTimeout(() => {
         this.isShow = false;
-        this.popper.destroy(); // destroy popper when hide
-        this.popper = null;
+        this.popperTimer = setTimeout(() => {
+          this.popper.destroy(); // destroy popper when hide
+          this.popper = null;
+        }, 300);
       }, 300);
     },
   },

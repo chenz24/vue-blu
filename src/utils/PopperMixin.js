@@ -67,6 +67,7 @@ const PopperMixin = {
     showPopper() {
       this.isShow = true;
       if (this.timer) clearTimeout(this.timer);
+      if (this.popperTimer) clearTimeout(this.popperTimer);
     },
 
     createInstance() {
