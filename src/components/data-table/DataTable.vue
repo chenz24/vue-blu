@@ -25,7 +25,6 @@
   </div>
 </template>
 <script>
-// import map from 'lodash/map';
 import sortBy from 'lodash/sortBy';
 import utils from '../../../src/utils/utils';
 
@@ -95,7 +94,6 @@ export default {
       console.log(newVal);
     },
     data(val) {
-      console.log(val);
       this.interData = val;
       this.handleReorganizeData();
     },

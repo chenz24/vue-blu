@@ -29,7 +29,6 @@ export default {
   render(h) {// eslint-disable-line
     const state = this.state;
     const checked = this.$parent.isCheckAll();
-    console.log('checked', checked);
     return (
       <thead>
         <tr>

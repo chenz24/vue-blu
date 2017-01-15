@@ -94,7 +94,6 @@ export default {
       return this.interCurrent < this.totalPage;
     },
     handlePrev() {
-      console.log(this.interCurrent);
       this.handleChangePage(this.interCurrent - 1);
     },
     handleNext() {

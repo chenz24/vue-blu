@@ -29,9 +29,21 @@ Vue.use(VueBlu)
 
 ## 示例
 
-<tooltip content="测试内容" :always="false" placement="topLeft">
-  <button class="button is-primary">tooltip button</button>
-</tooltip>
+::: demo
+<summary>
+  #### Tag
+  * 默认有五种主题颜色的tag，包括`primary` `info` `success` `danger` `warning`，通过`type`来设置
+</summary>
+
+```html
+<tag type="primary">Tag Primary</tag>
+<tag type="info">Tag Info</tag>
+<tag type="success">Tag Success</tag>
+<tag type="danger">Tag Danger</tag>
+<tag type="warning">Tag Warning</tag>
+<tag type="primary" color="#f50" :closable="true">Tag Color</tag>
+```
+:::
 
 
 ## 版本

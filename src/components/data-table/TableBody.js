@@ -21,9 +21,9 @@ export default {
     },
   },
   watch: {
-    cols(newVal) {
-      console.log(newVal);
-    },
+    // cols(newVal) {
+    //   console.log(newVal);
+    // },
   },
   methods: {
     handleToggleSelect(row, isSelect, index) {
