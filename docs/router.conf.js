@@ -19,14 +19,6 @@ export default [
     ],
   },
   {
-    path: '/test',
-    component: require('./components/test.vue'),
-  },
-  {
-    path: '/table-test',
-    component: require('./components/Table.vue'),
-  },
-  {
     path: '/components',
     name: 'components',
     component: require('./components/components.vue'),

@@ -70,7 +70,7 @@
                   <li><router-link to="/components/tooltip" exact>Tooltip 文字提示</router-link></li>
                   <li><router-link to="/components/timeline" exact>Timeline 时间线</router-link></li>
                   <!--<li><a href="#">Tree</a></li>-->
-                  <!--<li><router-link to="/components/datatable" exact>Table 表格</router-link></li>-->
+                  <li><router-link to="/components/datatable" exact>Table 表格</router-link></li>
                 </ul>
 
                 <p class="menu-label">Form</p>

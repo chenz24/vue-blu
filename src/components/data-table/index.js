@@ -1,7 +1,9 @@
 import DataTable from './DataTable';
-import TableColumn from './TableColumn';
+import Column from './TableColumn';
+import TableToolbar from './Toolbar';
 
 export {
   DataTable,
-  TableColumn,
+  Column,
+  TableToolbar,
 };

@@ -1,10 +1,10 @@
 <template>
   <div class="table-toolbar level">
     <div class="level-left">
-      <div class="level-item">
+      <div class="level-item" v-if="hasRefresh">
         <a class="button is-primary" @click="handleRefresh"><i class="fa fa-refresh"></i></a>
       </div>
-      <div class="level-item">
+      <div class="level-item" v-if="hasColumnsControl">
         <dropdown>
           <a class="button is-primary" @click="handleRefresh"><i class="fa fa-eye"></i></a>
           <div slot="content">
@@ -17,12 +17,10 @@
           </div>
         </dropdown>
       </div>
-      <div class="level-item">
-        <p class="control has-addons">
-          <input class="input" type="text" placeholder="Find a post">
-          <button class="button">Search</button>
-        </p>
-      </div>
+      <slot name="left"></slot>
+    </div>
+    <div class="level-right">
+      <slot name="right"></slot>
     </div>
   </div>
 </template>
@@ -30,7 +28,7 @@
 export default {
   props: {
     hasRefresh: Boolean,
-    hasColumnControl: Boolean,
+    hasColumnsControl: Boolean,
   },
 
   data() {
@@ -41,7 +39,7 @@ export default {
 
   methods: {
     handleRefresh() {
-      console.log('refresh');
+      this.$parent.handleRefresh();
     },
     handleColumnControl(index) {
       this.$parent.columns[index].visible = !this.$parent.columns[index].visible;
@@ -52,13 +50,5 @@ export default {
   created() {
     this.columns = this.$parent.columns;
   },
-//
-//  mounted() {
-//    this.columns = this.$parent.columns.map((column) => {
-//      column.icon = column.visible ? 'fa-check' : '';
-//      return column;
-//    });
-//    console.log('columns', this.columns);
-//  },
 };
 </script>
