@@ -4,7 +4,8 @@
  * Released under the MIT License.
  * Documentation: https://chenz24.github.io/vue-blu/#/
  */
-import Style from './components/styles';
+import './scss/main.scss';
+
 import Affix from './components/affix';
 import Tooltip from './components/tooltip';
 import Popover from './components/popover';
@@ -32,10 +33,8 @@ import Datepicker from './components/datepicker';
 
 import Notify from './components/notify';
 import MessageModal from './components/message-modal';
-// import './scss/main.scss';
 
 const components = {
-  Style,
   Affix,
   Tooltip,
   Popover,
