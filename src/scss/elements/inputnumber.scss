@@ -1,0 +1,10 @@
+.blu-ipt-number{
+  .button{
+    .icon{
+      margin: 0;
+    }
+  }
+  &.is-disabled{
+    opacity: .5;
+  }
+}

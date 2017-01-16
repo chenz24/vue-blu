@@ -1,0 +1,21 @@
+.scroll-top{
+  cursor: pointer;
+  position: fixed;
+  line-height: 40px;
+  bottom: 50px;
+  right: 50px;
+  color: #fff;
+  background-color: rgba(0,0,0,.6);
+  padding: 0 8px;
+  /*display: none;*/
+  -webkit-transition: background-color .2s ease;
+  -o-transition: background-color .2s ease;
+  transition: background-color .2s ease;
+  border-radius: 4px;
+}
+.scroll-top:hover {
+  background-color: rgba(0,0,0,.8);
+}
+.scroll-top .icon{
+  vertical-align: middle;
+}

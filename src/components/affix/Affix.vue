@@ -126,10 +126,3 @@ export default {
 
 };
 </script>
-<style>
-.affix{
-  position: fixed;
-}
-.affix-placeholder{
-}
-</style>

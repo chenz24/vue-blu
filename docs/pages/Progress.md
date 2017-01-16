@@ -1,4 +1,4 @@
-## Progressar 进度条
+## ProgressBar 进度条
 
 为当前工作流程和动作提供实时反馈
 

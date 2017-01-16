@@ -1,0 +1,44 @@
+.aside{
+  position: fixed;
+  z-index: 1986;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  transition: all .3s ease;
+  .close{
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    cursor: pointer;
+    filter: alpha(opacity=20);
+    opacity: .2;
+    font-family: Arial,sans-serif;
+  }
+  .close:focus, .close:hover{
+    filter: alpha(opacity=50);
+    opacity: .5;
+  }
+  .modal-card{
+    width: 450px;
+    max-width: 100%;
+    margin: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    max-height: 100%;
+    border-radius: 0;
+    .modal-card-head, .modal-card-foot{
+      border-radius: 0;
+    }
+  }
+  &.aside-right{
+    .modal-card{
+      left: auto;
+      right: 0;
+    }
+  }
+}

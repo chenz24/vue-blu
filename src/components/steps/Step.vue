@@ -33,14 +33,3 @@ export default {
   },
 };
 </script>
-<style lang="scss">
-.step-panel{
-  flex: 1 1;
-  &[class*="leave-active"] {
-   overflow: hidden;
-   position: absolute;
-   transform: translateX(0);
-   transform: translateY(0);
- }
-}
-</style>

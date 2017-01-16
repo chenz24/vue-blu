@@ -1,0 +1,52 @@
+.blu-radio{
+  padding-left: 20px;
+  user-select: none;
+  input[type="radio"]{
+    cursor: pointer;
+    opacity: 0;
+    outline: none!important;
+    position: absolute;
+  }
+  &:before{
+    background-color: #ffffff;
+    border-radius: 100%;
+    border: 2px solid $primary;
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    left: 0;
+    position: absolute;
+    transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
+    -webkit-transition: 0.2s ease-in-out;
+    outline: none !important;
+  }
+  &.on:after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 4px;
+    left: 4px;
+    border: 4px solid;
+    border-color: $primary;
+    border-radius: 100%;
+    transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
+    -webkit-transition: 0.2s ease-in-out;
+  }
+
+  &.is-primary.on:after{
+    color: #fff;
+  }
+
+}
+.radio-button{
+  input[type="radio"]{
+    cursor: pointer;
+    opacity: 0;
+    outline: none!important;
+    position: absolute;
+  }
+}

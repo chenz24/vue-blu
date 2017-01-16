@@ -47,27 +47,3 @@ export default {
   },
 };
 </script>
-<style lang="scss">
-  .card-header-title{
-    font-weight: 500;
-  }
-  .collapse-item{
-    .card-header{
-      cursor: pointer;
-    }
-    .card-content{
-      padding: 0 20px;
-      .content{
-        padding: 20px 0;
-      }
-    }
-    .card-header-icon{
-      transition: transform .377s ease;
-    }
-    &.is-active{
-      & > .card-header .card-header-icon{
-        transform: rotate(90deg);
-      }
-    }
-  }
-</style>

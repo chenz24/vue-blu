@@ -78,27 +78,3 @@ export default {
   },
 };
 </script>
-<style lang="scss">
-@import '~flatpickr/dist/flatpickr.min.css';
-.datepicker{
-  .has-icon{
-    i{
-      -webkit-transition: all .3s;
-      transition: all .3s;
-    }
-    .fa-times{
-      display: none;
-      cursor: pointer;
-      pointer-events: all;
-    }
-    &:hover{
-      .fa-times{
-        display: inline-block;
-      }
-      .fa-calendar{
-        display: none;
-      }
-    }
-  }
-}
-</style>

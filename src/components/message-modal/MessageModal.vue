@@ -97,36 +97,3 @@ export default {
   },
 };
 </script>
-<style lang="scss">
-@import "../../scss/variables.scss";
-.modal-confirm{
-  .modal-card{
-    width: 400px;
-    .media{
-      &.is-primary{
-        .media-left{
-          color: $primary;
-        }
-      }
-      &.is-info{
-        .media-left{
-          color: $info;
-        }
-      }
-      &.is-warning{
-        .media-left{
-          color: $warning;
-        }
-      }
-      &.is-danger{
-        .media-left{
-          color: $danger;
-        }
-      }
-    }
-    .media-left{
-      font-size: 20px;
-    }
-  }
-}
-</style>

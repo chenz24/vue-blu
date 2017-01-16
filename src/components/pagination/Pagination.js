@@ -1,8 +1,7 @@
 import Pager from './Pager';
-import PageStyle from './PageStyle';
 
 export default {
-  components: { Pager, PageStyle },
+  components: { Pager },
   props: {
     pageSize: {
       type: Number,

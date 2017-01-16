@@ -1,0 +1,123 @@
+.switch-wrap{
+  position: relative;
+  display: inline-block;
+  padding-left: 60px;
+  min-height: 20px;
+
+  &.is-small{
+    padding-left: 48px;
+    .switchery{
+      width: 40px;
+      height: 18px;
+      & > small{
+        width: 18px;
+        height: 18px;
+      }
+      &.on{
+        & > small{
+          left: 22px;
+        }
+      }
+    }
+    .text{
+      margin-left: 22px;
+    }
+  }
+}
+
+.switchery{
+  position: absolute;
+  left: 0;
+  margin-top: -2px;
+  border: 1px solid #ddd;
+  border-radius: 100px;
+  cursor: pointer;
+  display: inline-block;
+  width: 48px;
+  height: 22px;
+  transition: border .4s, box-shadow .4s;
+  background-color: rgb(255, 255, 255);
+  border-color: rgb(233, 233, 233);
+  box-shadow: rgb(233, 233, 233) 0px 0px 0px 0px inset;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+
+  &.has-text{
+    width: 56px;
+    &.on{
+      & > small{
+        left: 34px;
+      }
+    }
+  }
+
+  .text{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 13px;
+    color: #999;
+    margin-left: 25px;
+  }
+
+  & > small{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 22px;
+    transition: background-color 0.4s, left 0.2s;
+    border-radius: 100px;
+    background-color: #fff;
+    height: 22px;
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.4);
+    box-shadow: 0 1px 3px rgba(0,0,0,.4);
+  }
+
+  &.on{
+    background-color: $primary;
+    border-color: $primary;
+    box-shadow: $primary 0px 0px 0px 12px inset;
+    transition: border 0.4s, box-shadow 0.4s, background-color 1.2s;
+
+    & > small{
+      left: 26px;
+    }
+    .text{
+      text-align: right;
+      margin-left: 5px;
+      color: #fff;
+    }
+  }
+  &.is-info{
+    &.on{
+      background-color: $info;
+      border-color: $info;
+      box-shadow: $info 0px 0px 0px 12px inset;
+    }
+  }
+  &.is-success{
+    &.on{
+      background-color: $success;
+      border-color: $success;
+      box-shadow: $success 0px 0px 0px 12px inset;
+    }
+  }
+  &.is-warning{
+    &.on{
+      background-color: $warning;
+      border-color: $warning;
+      box-shadow: $warning 0px 0px 0px 12px inset;
+    }
+  }
+  &.is-danger{
+    &.on{
+      background-color: $danger;
+      border-color: $danger;
+      box-shadow: $danger 0px 0px 0px 12px inset;
+    }
+  }
+}

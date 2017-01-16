@@ -105,17 +105,3 @@ export default {
   },
 };
 </script>
-<style lang="scss">
-.popover-confirm{
-  max-width: 210px;
-}
-.popover-content{
-  .media-left{
-    font-size: 20px;
-  }
-}
-.popover-footer{
-  text-align: right;
-  margin:0 14px 9px;
-}
-</style>

@@ -87,15 +87,3 @@ export default {
   },
 };
 </script>
-<style lang="scss">
-.has-children{
-  .fa{
-    transition: transform .377s ease;
-  }
-  &.is-open .nav-right{
-    .fa{
-      transform: rotate(180deg);
-    }
-  }
-}
-</style>

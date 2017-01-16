@@ -73,10 +73,3 @@ export default {
   },
 };
 </script>
-<style>
-.is-square{
-  border-radius: 3px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-}
-</style>

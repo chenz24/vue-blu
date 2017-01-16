@@ -92,15 +92,3 @@ export default {
   },
 };
 </script>
-<style lang="scss">
-.blu-ipt-number{
-  .button{
-    .icon{
-      margin: 0;
-    }
-  }
-  &.is-disabled{
-    opacity: .5;
-  }
-}
-</style>

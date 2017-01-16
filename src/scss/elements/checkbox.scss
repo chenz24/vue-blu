@@ -1,0 +1,50 @@
+.blu-checkbox{
+  padding-left: 20px;
+  user-select: none;
+  input[type="checkbox"]{
+    cursor: pointer;
+    opacity: 0;
+    outline: none!important;
+    position: absolute;
+  }
+  &:before{
+    background-color: #ffffff;
+    border-radius: 2px;
+    border: 1px solid gainsboro;
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    left: 0;
+    position: absolute;
+    transition: 0.1s ease-in-out;
+    -o-transition: 0.1s ease-in-out;
+    -webkit-transition: 0.1s ease-in-out;
+    outline: none !important;
+  }
+  &.on:after{
+    font: normal normal normal 14px/1 FontAwesome;
+    content: "\f00c";
+    color: #7a7d84;
+    display: inline-block;
+    font-size: 11px;
+    height: 16px;
+    left: 0;
+    padding-left: 3px;
+    padding-top: 1px;
+    position: absolute;
+    top: 2px;
+    width: 16px;
+    transition: 0.1s ease-in-out;
+    -o-transition: 0.1s ease-in-out;
+    -webkit-transition: 0.1s ease-in-out;
+  }
+  &.is-primary.on:before{
+    background-color: $primary;
+    border-color: $primary;
+  }
+  &.is-primary.on:after{
+    color: #fff;
+  }
+
+}
