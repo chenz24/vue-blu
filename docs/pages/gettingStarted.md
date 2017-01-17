@@ -48,7 +48,7 @@ Vue.use(VueBlu)
 
 ## 版本
 
-- 0.1.2 beta
+- 0.1.7 beta
 
 ## 兼容性
 

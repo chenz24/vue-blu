@@ -1,6 +1,6 @@
 {
   "name": "vue-blu",
-  "version": "0.1.5",
+  "version": "0.1.7",
   "description": "A UI Component Library Base on Vue.js and Bulma",
   "author": "Chenz <chenz8606@gmail.com>",
   "private": false,
