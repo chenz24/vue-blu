@@ -112,8 +112,8 @@
 | duration | 倒计时关闭的秒数，单位秒 | Number | 4.5 |
 | icon | 图标 | String | 无 |
 | placement | notify的位置,可选值`top-right` `top-center` `top-left` `bottom-right` `bottom-center` `bottom-left` | String | top-right   |
-| closable | 是否可关闭  | Boolean | false   |
-| transition | 过度效果，可选值见 #link  | String | 无   |
+| closable | 是否可关闭  | Boolean | true   |
+| transition | 过度效果，可选值见 #link  | String | 无  |
 
 
 <script>
