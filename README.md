@@ -21,6 +21,14 @@ Vue.use(VueBlu)
 
 ## Development
 
+```bash
+# install dependencies
+npm install
+# serve with hot reload at localhost:8080
+npm run dev
+# build for production with minification
+npm run package
+```
 
 ## Credits
 Blu is inspired or powered by these people or projects so I want to thank them
