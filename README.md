@@ -30,6 +30,15 @@ npm run dev
 npm run package
 ```
 
+## Version
+
+- 0.1.8 beta
+
+## Compatibility
+
+- Vuejs(2.1.6+)
+- Modern browsers and IE10+
+
 ## Credits
 Blu is inspired or powered by these people or projects so I want to thank them
 
