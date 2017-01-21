@@ -18,9 +18,24 @@
                   <span class="icon"><i class="fa fa-github"></i></span>
                   <span>GitHub</span>
                 </a>
+                <!--<a class="button is-primary is-inverted" href="">-->
+                  <!--<span class="icon"><i class="fa fa-download"></i></span>-->
+                  <!--<span>Download</span>-->
+                <!--</a>-->
               </span>
             </div>
           </nav>
+        </div>
+      </div>
+      <div class="hero-body">
+        <div class="container">
+          <div class="column is-vcentered">
+            <div class="">
+              <p class="has-text-centered logo-icon"><img src="../assets/logo-icon.png" width="100"></p>
+              <p class="title has-text-centered">Vue-Blu</p>
+              <p class="has-text-centered">A flexible and powerful UI components library for developing fast and powerful web application</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -51,15 +66,14 @@
         </div>
       </div>
     </footer>
-    <scroll-to target="top"></scroll-to>
   </div>
 </template>
 <script>
-  import SideMenu from './SideMenuCn';
+import SideMenu from './SideMenuEn';
 
-  export default {
-    components: { SideMenu },
-  };
+export default {
+  components: { SideMenu },
+};
 </script>
 <style lang="scss">
   .logo-icon{
@@ -83,9 +97,6 @@
       position: relative;
       display: block;
       padding: 5px 0px;
-    }
-    .menu{
-      margin-top: 10px;
     }
   }
 </style>

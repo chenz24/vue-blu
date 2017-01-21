@@ -55,37 +55,9 @@
   </div>
 </template>
 <script>
-  import SideMenu from './SideMenuCn';
+  import SideMenu from './SideMenuEn';
 
   export default {
     components: { SideMenu },
   };
 </script>
-<style lang="scss">
-  .logo-icon{
-    margin-top: 40px;
-    margin-bottom: 30px;
-    img{
-      max-width: 150px;
-    }
-  }
-  #app{
-
-    .is-brand{
-      img{
-        max-height: 30px;
-      }
-    }
-  }
-  .list-group{
-
-    .list-group-item {
-      position: relative;
-      display: block;
-      padding: 5px 0px;
-    }
-    .menu{
-      margin-top: 10px;
-    }
-  }
-</style>

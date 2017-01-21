@@ -1,0 +1,135 @@
+/*eslint-disable */
+export default [
+  {
+    path: '/en',
+    component: require('./components/EnEntry.vue'),
+    children: [{
+      path: '',
+      component: require('./components/EnIndex.vue'),
+      children: [{
+        path: '',
+        component: require('./pages/en/gettingStarted.md'),
+      }, {
+        path: 'changelog',
+        component: require('./pages/en/changelog.md'),
+      }, {
+        path: 'customize',
+        component: require('./pages/en/Customize.md'),
+      }],
+    }, {
+      path: 'components',
+      component: require('./components/EnComponents.vue'),
+      children: [{
+        path: 'helper',
+        component: require('./pages/en/Helper.md'),
+      }, {
+        path: 'layout',
+        component: require('./pages/en/Layout.md'),
+      }, {
+        path: 'button',
+        component: require('./pages/en/Button.md'),
+      }, {
+        path: 'icon',
+        component: require('./pages/en/Icon.md'),
+      }, {
+        path: 'transition',
+        component: require('./pages/en/Transition.md'),
+      }, {
+        path: 'affix',
+        component: require('./pages/en/Affix.md'),
+      }, {
+        path: 'scrollto',
+        component: require('./pages/en/ScrollTo.md'),
+      }, {
+        path: 'tabs',
+        component: require('./pages/en/Tabs.md'),
+      }, {
+        path: 'tag',
+        component: require('./pages/en/Tag.md'),
+      }, {
+        path: 'breadcrumb',
+        component: require('./pages/en/Breadcrumb.md'),
+      }, {
+        path: 'progress',
+        component: require('./pages/en/Progress.md'),
+      }, {
+        path: 'timeline',
+        component: require('./pages/en/Timeline.md'),
+      }, {
+        path: 'modal',
+        component: require('./pages/en/Modal.md'),
+      }, {
+        path: 'aside',
+        component: require('./pages/en/Aside.md'),
+      }, {
+        path: 'alert',
+        component: require('./pages/en/Alert.md'),
+      }, {
+        path: 'notify',
+        component: require('./pages/en/Notify.md'),
+      }, {
+        path: 'collapse',
+        component: require('./pages/en/Collapse.md'),
+      }, {
+        path: 'tooltip',
+        component: require('./pages/en/Tooltip.md'),
+      }, {
+        path: 'popover',
+        component: require('./pages/en/Popover.md'),
+      }, {
+        path: 'popconfirm',
+        component: require('./pages/en/PopConfirm.md'),
+      }, {
+        path: 'datatable',
+        component: require('./pages/en/DataTable.md'),
+      }, {
+        path: 'checkbox',
+        component: require('./pages/en/Checkbox.md'),
+      }, {
+        path: 'radio',
+        component: require('./pages/en/Radio.md'),
+      }, {
+        path: 'switch',
+        component: require('./pages/en/Switch.md'),
+      }, {
+        path: 'dropdown',
+        component: require('./pages/en/Dropdown.md'),
+      }, {
+        path: 'pagination',
+        component: require('./pages/en/Pagination.md'),
+      }, {
+        path: 'steps',
+        component: require('./pages/en/Steps.md'),
+      }, {
+        path: 'menu',
+        component: require('./pages/en/Menu.md'),
+        children: [{
+          path: 'submenu1',
+          component: require('./pages/en/Menu.md'),
+        }, {
+          path: 'submenu2',
+          component: require('./pages/en/Menu.md'),
+        }, {
+          path: 'submenu3',
+          component: require('./pages/en/Menu.md'),
+        },],
+      }, {
+        path: 'inputnumber',
+        component: require('./pages/en/InputNumber.md'),
+      }, {
+        path: 'form',
+        component: require('./pages/en/Form.md'),
+      }, {
+        path: 'datepicker',
+        component: require('./pages/en/DatePicker.md'),
+      }, {
+        path: 'select',
+        component: require('./pages/en/Select.md'),
+      }
+
+      ],
+    },
+    ],
+  },
+];
+/*eslint-disable */
