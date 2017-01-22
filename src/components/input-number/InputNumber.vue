@@ -5,7 +5,7 @@
         <i class="fa fa-minus"></i>
       </span>
     </a>
-    <input class="input" :class="[sizeClass]" type="text" v-model="interVal" @keydown.prevent="handleKeyDown">
+    <input class="input" :class="[sizeClass]" type="text" v-model="interVal" @keydown="handleKeyDown">
     <a class="button" :class="[sizeClass]" @click="decrease" v-if="mode!=='s'">
       <span class="icon is-small">
         <i class="fa fa-minus"></i>
@@ -64,20 +64,21 @@ export default {
   methods: {
     increase() {
       if (this.max) {
-        (this.interVal + this.step <= this.max) && this.changeVal(this.step);
+        (Number(this.interVal) + this.step <= this.max) && this.changeVal(this.step);
       } else {
         this.changeVal(this.step);
       }
     },
     decrease() {
       if (this.min || this.min === 0) {
-        (this.interVal - this.step >= this.min) && this.changeVal(-this.step);
+        (Number(this.interVal) - this.step >= this.min) && this.changeVal(-this.step);
       } else {
         this.changeVal(-this.step);
       }
     },
     changeVal(num) {
       if (this.disabled) return;
+      this.interVal = Number(this.interVal);
       this.interVal += num;
       this.$emit('input', this.interVal);
       this.onChange(this.interVal);
