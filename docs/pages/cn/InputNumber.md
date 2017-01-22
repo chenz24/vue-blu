@@ -52,7 +52,7 @@
 |------------|----------------|--------------------|--------------|
 | val    | 初始值   | Number | 无    |
 | min    | 最小值   | Number | 0    |
-| max | 最小值 | Number | Infinity |
+| max | 最大值 | Number | Infinity |
 | size | 标签大小，可选值为`small`  | String | 无 |
 | mode | 按钮展现方式，当值为`s`时，按钮放在两边  | String | 无 |
 | step | 步长 | Number | 1   |

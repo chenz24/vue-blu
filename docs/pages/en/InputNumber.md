@@ -1,18 +1,18 @@
 ## InputNumber
 
-用在数字的输入场景中，可使用鼠标和键盘操作
+Enter a number within certain range with the mouse or keyboard.
 
-### 代码演示
+### Examples
 
 ::: demo
 <summary>
-  #### 基本
-  * 通过 `disabled` 设置禁用状态
-  * 设置 `size="small"` 显示小尺寸
-  * 通过 `step` 设置步长
-  * `mode='s'` 设置增减按钮放在input的两边
-  * 通过 `max` `min` 设置范围
-  * 通过 `on-change` 设置回调
+  #### Basic
+  * Enable or disable the component by `disabled`
+  * Sets `size="small"` to show small size component
+  * `step` - incremental step
+  * `mode='s'` to set increase and decrease buttons on both sides of input
+  * Sets the range by `max` and `min`
+  * Sets callback by `on-change`
 </summary>
 
 ```html
@@ -33,7 +33,7 @@
     methods: {
       callback(num) {
         this.$notify.open({
-          content: `现在的数字是${num}`,
+          content: `now the number is ${num}`,
           icon: 'smile-o',
           placement: 'top-center',
         });
@@ -47,15 +47,16 @@
 
 ### API
 
-| 成员        | 说明           | 类型               | 默认值       |
+| Properties        | Description           | Type        | Default       |
 |------------|----------------|--------------------|--------------|
-| min    | 最小值   | Number | 无    |
-| max | 最小值 | Number | 无 |
-| size | 标签大小，可选值为`small`  | String | 无 |
-| mode | 按钮展现方式，当值为`s`时，按钮放在两边  | String | 无 |
-| step | 步长 | Number | 1   |
-| disabled | 设置禁用状态  | Boolean | false   |
-| on-change | 数字改变时的回调  | Function | 无   |
+| val    | default value   | Number | -    |
+| min    | min value   | Number | 0    |
+| max | max value | Number | Infinity |
+| size | size of the component,it can be `small`  | String | - |
+| mode | the position of buttons，when `s`时，按钮放在两边  | String | 无 |
+| step | The number to which the current value is increased or decreased. | Number | 1   |
+| disabled | Enable or disable the component  | Boolean | false   |
+| on-change | The callback triggered when the value is changed.	  | Function(val) | -   |
 
 
 <script>
@@ -63,7 +64,7 @@ export default {
   methods: {
     callback(num) {
       this.$notify.open({
-        content: `现在的数字是${num}`,
+        content: `now the number is ${num}`,
         icon: 'smile-o',
         placement: 'top-center',
       });
