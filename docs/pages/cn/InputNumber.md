@@ -25,7 +25,7 @@
 
 <input-number mode="s"></input-number>
 
-<input-number :max="10" :min="-5"></input-number>
+<input-number :max="10" :min="-5" :on-change="callback"></input-number>
 
 <input-number mode="s" :on-change="callback"></input-number>
 

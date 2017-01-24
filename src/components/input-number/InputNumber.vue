@@ -61,27 +61,42 @@ export default {
     };
   },
 
+  watch: {
+    interVal(val, oldVal) {
+      this.handleFormat(val);
+      if (this.interVal !== Number(oldVal) && this.interVal !== '-') {
+        if (isNaN(oldVal) && oldVal !== '-') return;
+        this.$emit('input', this.interVal);
+        this.onChange(this.interVal);
+      }
+    },
+  },
+
   methods: {
+    handleFormat(val) {
+      if (val !== '' && val !== '-') {
+        this.interVal = isNaN(this.interVal) ? 0 : Number(this.interVal);
+        if (this.interVal > this.max) this.interVal = this.max;
+        if (this.interVal < this.min) this.interVal = this.min;
+      }
+    },
     increase() {
       if (this.max) {
-        (Number(this.interVal) + this.step <= this.max) && this.changeVal(this.step);
+        (this.interVal + this.step <= this.max) && this.changeVal(this.step);
       } else {
         this.changeVal(this.step);
       }
     },
     decrease() {
       if (this.min || this.min === 0) {
-        (Number(this.interVal) - this.step >= this.min) && this.changeVal(-this.step);
+        (this.interVal - this.step >= this.min) && this.changeVal(-this.step);
       } else {
         this.changeVal(-this.step);
       }
     },
     changeVal(num) {
       if (this.disabled) return;
-      this.interVal = Number(this.interVal);
       this.interVal += num;
-      this.$emit('input', this.interVal);
-      this.onChange(this.interVal);
     },
     handleKeyDown(e) {
       if (e.keyCode === 38) {
