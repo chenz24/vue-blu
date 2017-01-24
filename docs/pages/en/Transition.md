@@ -1,14 +1,14 @@
-## Transition 过渡动画
+## Transition
 
-基于Animate.css，在插入、更新或者移除 DOM 时，提供多种不同方式的应用过渡效果。
+Base on Animate.css,Blu provides a variety of transition effects when items are inserted, updated, or removed from the DOM
 
-### 代码演示
+### Examples
 
 ::: demo
 <summary>
-  #### 基本
-  * 通过vue的`transition`组件来设置。Vue-Blu部分组件可使用`transition`参数设置，如modal、notify等，具体参考组件文档
-  * 过渡效果的`animation-duration` 可通过覆盖`$transition-speed`变量实现自定义
+  #### Basic
+  * Sets it by `transition` component of Vue. such as `<transition name="fade">...</transition>`
+  * Modify the `animation-duration` of transition by overriding `$transition-speed`(sass variable)
 </summary>
 
 ```html
@@ -226,11 +226,11 @@
 
 ### API
 
-| 成员        | 说明           | 类型               | 默认值       |
+| Properties        | Description           | Type        | Default       |
 |------------|----------------|--------------------|--------------|
-| transition |可选值有`bounce` `bounceDown` `bounceLeft` `bounceRight` `bounceUp` `fade` `fadeDown` `fadeDownBig` `fadeLeft` `fadeLeftBig` `fadeRight` `fadeRightBig` `fadeUp` `fadeUpBig` `rotate` `rotateDownLeft` `rotateDownRight` `rotateUpLeft` `rotateUpRight` `slideDown` `slideLeft` `slideRight` `slideUp` `zoom` `zoomDown` `zoomLeft` `zoomRight` `zoomUp` | String | 无    |
+| transition |Accepted Values: `bounce` `bounceDown` `bounceLeft` `bounceRight` `bounceUp` `fade` `fadeDown` `fadeDownBig` `fadeLeft` `fadeLeftBig` `fadeRight` `fadeRightBig` `fadeUp` `fadeUpBig` `rotate` `rotateDownLeft` `rotateDownRight` `rotateUpLeft` `rotateUpRight` `slideDown` `slideLeft` `slideRight` `slideUp` `zoom` `zoomDown` `zoomLeft` `zoomRight` `zoomUp` | String | -    |
 
-`注：` 本功能参考了 [vue2-animate](https://github.com/asika32764/vue2-animate)
+Thanks to [vue2-animate](https://github.com/asika32764/vue2-animate)
 
 <script>
 export default {

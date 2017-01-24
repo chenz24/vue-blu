@@ -1,14 +1,14 @@
-## Aside 侧边模态框
+## Aside
 
-从侧边滑出的模态框
+Create a smooth off-canvas sidebar that slides in and out of the page
 
-### 代码演示
+### Examples
 
 ::: demo
 <summary>
-  #### 基本
-  * aside基本拥有modal所有的特性
-  * 通过`placement`设置侧边模态框的位置，目前支持 left 和 right
+  #### Basic
+  * aside component is inherited from modal component,so it has all feature of modal
+  * Sets which side that that the component slides from by `placement`，accept left and right
 </summary>
 
 ```html
@@ -22,7 +22,7 @@
     fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
   </p>
 </b-aside>
-<button @click="toggle" class="button is-primary">左侧模态框</button>
+<button @click="toggle" class="button is-primary">Left Aside</button>
 
 <b-aside :is-show="isShowRight" title="Right Aside!" :show-footer="false" placement="right" :backdrop="false" @close="isShowRight=false">
   <h3>Dolor sit amet</h3>
@@ -33,21 +33,22 @@
   <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo,
     fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
   </p>
-  <p><code>右侧Aside并且不显示footer</code></p>
+  <p><code>Right Aside with no footer</code></p>
 </b-aside>
-<button @click="toggleRight" class="button is-primary">右侧模态框</button>
+<button @click="toggleRight" class="button is-primary">Right Aside</button>
 
 ```
 :::
 
 ### API
 
-Aside是基于modal的组件，所以它拥有modal所有的特性，具体的参数可参考modal的文档，唯一不同的是Aside通过`placement`设置位置
+Aside component is inherited from modal component,so it has all feature of modal，and the apis documentation can refer to modal.
+the only one different is `position` parameter.
 
-| 成员        | 说明       | 类型   | 默认值       |
+| Properties        | Description           | Type        | Default       |
 |------------|-----------|--------|--------------|
-| placement  | 位置       | String | left    |
-| width      | 宽度       | Number | 400     |
+| placement  | position       | String | left    |
+| width      | width       | Number | 400     |
 
 <script>
 export default {

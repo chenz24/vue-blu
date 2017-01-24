@@ -4,7 +4,7 @@
   <timeline-item date="2017-01-01" icon="" type="primary">
     <h4>版本：0.1.0</h4>
     <ul>
-      <li>第一个发布版本，包含以下组件：
+      <li>第一个版本，包含以下组件：
         <ul>
           <li>
             <code>Affix</code>
@@ -43,5 +43,9 @@
   <timeline-item date="2017-01-03" type="primary">
     <h4>版本：0.1.3</h4>
     <p>新增<code>Radio</code>单选框组件</p>
+  </timeline-item>
+  <timeline-item date="2017-01-16" type="primary">
+    <h4>版本：0.1.6</h4>
+    <p>第一个公开版本</p>
   </timeline-item>
 </timeline>

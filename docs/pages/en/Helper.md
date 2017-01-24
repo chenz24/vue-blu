@@ -1,15 +1,16 @@
-## Helper 帮助说明
+## Helper
 
-Vue-Blu的样式库采用了bulma —— 一套新兴的、基于**Flexbox**、现代化的纯css框架。有着强大的布局功能和丰富的样式设定。就像大家可以在bootstrap上轻松写页面一样，
-有了bulma将会大大减轻前端在样式和布局方面的工作量。甚至，bulma在这方面会比bootstrap做的更好。基于bulma构筑的Vue-Blu，可以说有了一个先天的优势。
-使用blu不仅可以拥有丰富的Vue组件还可以使用bulma带来的布局和样式上的便利。
+Vue-Blu's style library uses Bulma -- a new,Flexbox based,modern pure css framework.With a powerful layout feature and
+rich style settings.As we can easily write pages with bootstrap,with Bulma will greatly reduce the front end in the style
+and layout of the workload.Even,bulma in this respect will do better than bootstrap.Vue-Blu based on bulma, can be said
+to have a congenital advantage.Use Blu can not only have a rich Vue components can also use Bulma to bring the layout
+and style of convenience.
 
-基于上面所述，Blu的有些基本组件并没有vue化，而是原生的html、css。其实我们并不主张过度'组件化'，像layout、button之类的元素，原生已经有了足够的表达力，
-组件化之后反而会降低效率和灵活性。下面将对bulma的相关基础功能、颜色等做些介绍。
+The following will be related to the basic functions of Bulma, color, etc. to do some introduction.
 
 ### Helpers
 
-| Member           | Description           |
+| Properties           | Description           |
 |----------------|--------------------|
 | `is-clearfix`   | Fixes an element's floating children|
 |  `is-pulled-left`  | Moves an element to the left(float:left)  |
@@ -29,8 +30,8 @@ Vue-Blu的样式库采用了bulma —— 一套新兴的、基于**Flexbox**、�
 
 ::: demo
 <summary>
-  #### 主要颜色
-  * 五种主要颜色 `is-primary` `is-info` `is-success` `is-warning` `is-danger`
+  #### Colors
+  * Five primary colors `is-primary` `is-info` `is-success` `is-warning` `is-danger`
 </summary>
 
 ```html
@@ -54,9 +55,9 @@ Vue-Blu的样式库采用了bulma —— 一套新兴的、基于**Flexbox**、�
 ```
 :::
 
-### 更多说明
+### More detail
 
-`注：` 更多说明请见 [Bulma Documentation](http://bulma.io/documentation/overview/start/)
+`Note：` For more information: [Bulma Documentation](http://bulma.io/documentation/overview/start/)
 
 
 

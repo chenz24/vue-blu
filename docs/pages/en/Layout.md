@@ -1,16 +1,17 @@
-## Layout 布局
+## Layout
 
-基于flexbox，强大的布局工具。
+Flexbox based，Powerful layout tool.
 
-如前一章所说，Vue-Blu的布局系统是基于Bulma框架的，下面将对布局的主要内容做一下介绍，更多详情可以参考 [Bulma官方文档](http://bulma.io/documentation/grid/columns/) 。
+As mentioned in the previous chapter, Vue-Blu's layout system is based on the Bulma framework,The following will
+introduce the main contents of the layout，More details can refer to [Bulma documentation](http://bulma.io/documentation/grid/columns/) 。
 
-### 简单布局
+### Basic
 
 ::: demo
 <summary>
-  #### 基本
-  1. 添加 class为 `columns` 的容器
-  2. 添加 任意多的 `column` 元素
+  #### Basic usage
+  1. Add a `columns` container
+  2. Add as many `column` elements as you want
 </summary>
 
 ```html
@@ -31,12 +32,13 @@
 ```
 :::
 
-### 12列布局
+### 12 columns
 
 ::: demo
 <summary>
-  #### 基本
-  * 采用12列布局，通过 `is-2` `is-3` `is-4`... 设置column所占的比例
+  #### grid system
+  * As the grid can be divided into 12 columns, there are size classes for each division:
+  * `is-2` `is-3` `is-4`...
 </summary>
 
 ```html
@@ -267,12 +269,12 @@
 ```
 :::
 
-### offset 偏移
+### Offset
 
 ::: demo
 <summary>
-  #### 设置偏移
-  * 通过 `is-offset-*` 设置偏移量，如 `is-offset-2`
+  #### offset
+  * you can use offset modifiers like `.is-offset-x` to create horizontal space around .column elements
 </summary>
 
 ```html
@@ -290,12 +292,12 @@
 :::
 
 
-### 去除间隙
+### Gapless
 
 ::: demo
 <summary>
   #### Gapless
-  * 通过设置 `is-gapless` 去除column之间的间隙
+  * If you want to remove the space between the columns, add the is-gapless modifier on the columns container:
 </summary>
 
 ```html
@@ -316,9 +318,9 @@
 ```
 :::
 
-### 更多
+### More
 
-以上介绍了几个主要的布局方法，另外bulma还有响应式、瀑布式等更多功能的布局方式，这里不再一一介绍，
-请到官方网站查看 [Bulma官方文档](http://bulma.io/documentation/grid/columns/)
+The above describes several major layout methods of Bulma,for more information(such as responsive,waterfall..)
+please refer to the official site of Bulma -- [Bulma documentation](http://bulma.io/documentation/grid/columns/)
 
 

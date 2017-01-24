@@ -7,9 +7,9 @@ Alert message，show information that need to pay attention to.
 ::: demo
 <summary>
   #### Basic
-  * There are 6 types of Alert : `primary` `info` `success` `danger` `warning`，sets it by `type` parameter
+  * There are 6 types of Alert : `primary` `info` `success` `danger` `warning` and default，sets it by `type` parameter
   * Enable or disable close button by setting `closable` parameter
-  * type为`loading`时，显示动态载入效果
+  * Show loading icon when the `type='loading'`
 </summary>
 
 ```html
@@ -47,9 +47,9 @@ Alert message，show information that need to pay attention to.
 
 ::: demo
 <summary>
-  #### 图标和关闭回调
-  * 通过`icon` 可设置图标，`animated`设置是否动画
-  * `on-close`设置关闭时的回调
+  #### Icon and Callback
+  * Sets icon by `icon`，when `:animated="true"` the icon can spin
+  * Sets close callback by `on-close`
 </summary>
 
 ```html
@@ -61,7 +61,7 @@ Alert message，show information that need to pay attention to.
   Well done! You successfully read this important alert message.
 </alert>
 
-<alert title="回调" type="success" :closable="true" :on-close="close">
+<alert title="Callback" type="success" :closable="true" :on-close="close">
   Well done! You successfully read this important alert message.
 </alert>
 
@@ -71,14 +71,14 @@ Alert message，show information that need to pay attention to.
 
 ### API
 
-| Properties        | Description           | Type               | Default       |
+| Properties        | Description           | Type        | Default       |
 |------------|----------------|--------------------|--------------|
-| type    | 主题颜色，可选值为`primary` `info` `success` `danger` `warning` `loading`   | String | 无    |
-| title    | 标题 | String | 无   |
-| icon    | 图标 | String | 无   |
-| animated  | 图标是否旋转 | Boolean | false  |
-| closable | 是否可关闭  | Boolean | false   |
-| on-close | 关闭时的回调  | Function | 无   |
+| type    | Type of Alert styles，accepted values: `primary` `info` `success` `danger` `warning` `loading`   | String | default    |
+| title    | Sets the alert title | String | -   |
+| icon    | Sets the alert icon | String | -   |
+| animated  | Whether the icon can be animated | Boolean | false  |
+| closable | Whether Alert can be closed  | Boolean | false   |
+| on-close | Callback when close Alert  | Function | -   |
 
 <script>
   export default {

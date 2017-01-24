@@ -7,7 +7,8 @@
 ::: demo
 <summary>
   #### 基本
-  * tag有四种大小，除了默认大小还包括`small` `medium` `large`,通过`size`来设置
+  * 六种色调 除了default还包括`primary` `info` `success` `danger` `warning`
+  * 四种大小，除了默认大小还包括`small` `medium` `large`
 </summary>
 
 ```html

@@ -1,13 +1,14 @@
-## Icon 图标库
+## Icons
 
-Vue-Blu的图标库采用了被广泛使用的 [Fontawesome](http://fontawesome.io/)。图标库没有写成Vue组件的形式，通过原生标签即可调用
+Vue-Blu's icon library uses a widely used project -- [Fontawesome](http://fontawesome.io/). Icon library is not written in the form of Vue components,
+can be called by the native HTML label.
 
-### 代码演示
+### Examples
 
 ::: demo
 <summary>
-  #### 基本
-  * icon默认有四种大小，除了默认大小还包括`small` `medium` `large`
+  #### Basic
+  * Four sizes: `small` `medium` `large` and default
 </summary>
 
 ```html
@@ -26,7 +27,7 @@ Vue-Blu的图标库采用了被广泛使用的 [Fontawesome](http://fontawesome.
 ```
 :::
 
-### 图标库
+### icon library
 
 <icons></icons>
 

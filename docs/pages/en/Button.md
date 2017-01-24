@@ -1,13 +1,14 @@
-## Button 按钮
+## Button
 
-通过按钮触发一个操作/事件
+To trigger an operation.
 
-### 代码演示
+### Examples
 
 ::: demo
 <summary>
-  #### 基本
-  * tag有四种大小，除了默认大小还包括`small` `medium` `large`,通过`size`来设置
+  #### Basic
+  * Six colors of button: `primary` `info` `success` `danger` `warning` and default(no setting)
+  * Four sizes:`small` `medium` `large` and default
 </summary>
 
 ```html
@@ -33,13 +34,13 @@
 ```
 :::
 
-#### 不同Style
+#### Different styles
 
 ::: demo
 <summary>
-  #### 不同Style
-  * 通过设置 `is-outlined` 显示边框
-  * Inverted，文字颜色和背景颜色颠倒互换
+  #### Styles
+  * Outlined
+  * Inverted(the text color becomes the background color, and vice-versa)
 </summary>
 
 ```html
@@ -60,14 +61,14 @@
 ```
 :::
 
-#### States 状态
+#### States
 
 ::: demo
 <summary>
-  #### 不同状态
-  * 通过设置 `is-loading` 显示加载中
-  * 通过设置 `is-active` 显示激活状态
-  * 通过设置 `is-disabled` 禁用
+  #### states
+  * `is-loading` show loading state
+  * `is-active`
+  * `is-disabled`
 </summary>
 
 ```html
@@ -98,8 +99,8 @@
 
 ::: demo
 <summary>
-  #### Icon 图标
-  * 可内嵌图标，具体见下面代码
+  #### Icon
+  * With Font Awesome icons
 </summary>
 
 ```html
@@ -136,8 +137,8 @@
 
 ::: demo
 <summary>
-  #### 按钮组
-  * 按钮可成组显示
+  #### Button group
+  * If you want to group buttons together, use the is-grouped modifier on the control container:
 </summary>
 
 ```html
