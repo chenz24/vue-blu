@@ -1,13 +1,13 @@
-## ProgressBar 进度条
+## ProgressBar
 
-为当前工作流程和动作提供实时反馈
+To display the current progress of an operation flow.
 
-### 代码演示
+### Examples
 
 ::: demo
 <summary>
-  #### 基本
-  * 默认有五种主题颜色，包括`primary` `info` `success` `danger` `warning`，通过`type`来设置
+  #### Basic
+  * There are 6 colors of ProgressBar: `primary` `info` `success` `danger` `warning` and default. sets it by `type` parameter.
 </summary>
 
 ```html
@@ -21,13 +21,13 @@
 
 ::: demo
 <summary>
-  #### 更多设置
-  * `striped` 设置为true，显示彩带样式
-  * `animated` 设置为true，显示动态进度条
-  * `showinfo` 设置为true，显示当前进度数值
-  * `info-inside` 设置为false，进度信息会显示在进度条外
-  * 通过`size`设置progress bar的宽度，除了默认值外有 `small` `medium` `large`
-  * 通过设置format内容模板函数，自定义信息显示的内容
+  #### Advanced
+  * the progressbar can be `striped`
+  * the progressbar can be `animated`
+  * display the progress value by `showinfo`
+  * show info inside or outside of the progressbar by setting `info-inside`
+  * apply different size including `small` `medium` `large`
+  * You can custom text format by setting format
 </summary>
 
 ```html
@@ -75,14 +75,14 @@
 
 ### API
 
-| 成员        | 说明           | 类型               | 默认值       |
+| Properties        | Description           | Type        | Default    |
 |------------|----------------|--------------------|--------------|
-| type    | 主题颜色，可选值为`primary` `info` `success` `danger` `warning`   | String | 无    |
-| size | 标签大小，可选值为`small` `medium` `large` | String | 无 |
-| percent | 百分比 | Number | 0   |
-| showinfo | 是否显示进度数值  | Boolean | false   |
-| info-inside | 进度信息的显示是否在进度条内部  | Boolean | true   |
-| format  | 显示信息的模板函数  | function(percent) | `percent => percent + '%'` |
+| type    | There are 6 colors of ProgressBar: `primary` `info` `success` `danger` `warning` and default   | String | 无    |
+| size | size of ProgressBar，accepted values:`small` `medium` `large` | String | 无 |
+| percent | to set the completion percentage | Number | 0   |
+| showinfo | determine whether to display the progress value  | Boolean | false   |
+| info-inside | determine whether to display the progress value inside the ProgressBar | Boolean | true   |
+| format  | template function of the content	  | function(percent) | `percent => percent + '%'` |
 
 
 <script>

@@ -78,7 +78,7 @@
 | 成员        | 说明           | 类型               | 默认值       |
 |------------|----------------|--------------------|--------------|
 | type    | 主题颜色，可选值为`primary` `info` `success` `danger` `warning`   | String | 无    |
-| size | 标签大小，可选值为`small` `medium` `large` | String | 无 |
+| size | 大小，可选值为`small` `medium` `large` | String | 无 |
 | percent | 百分比 | Number | 0   |
 | showinfo | 是否显示进度数值  | Boolean | false   |
 | info-inside | 进度信息的显示是否在进度条内部  | Boolean | true   |

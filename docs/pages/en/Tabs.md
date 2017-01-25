@@ -1,14 +1,14 @@
-## Tabs 标签页
+## Tabs
 
-选项卡切换，常用于内容的收纳和展现
+Tabs make it easy to switch between different views.
 
-### 代码演示
+### Examples
 
 ::: demo
 <summary>
-  #### 基本
-  * 三种样式，默认 `boxed` `toggle`
-  * 通过 `slot` 设置内容
+  #### Basic
+  * Three styles，`boxed` `toggle` and default
+  * Setting content by `slot`
 </summary>
 
 ```html
@@ -45,14 +45,14 @@
 ```
 :::
 
-### 样式和图标
+### Styles and Icon
 
 ::: demo
 <summary>
-  #### 样式
-  * 通过 `is-full-width` 设置是否占满一行
-  * 通过 `size` 设置tab的大小
-  * 通过 `alignment` 设置对齐方式 `right` `left` `centered`
+  #### styles
+  * The tab can be set to take up the whole width
+  * There are 3 sizes of tab: `small` `large` and default
+  * `alignment`: `right` `left` `centered`
 </summary>
 
 ```html
@@ -89,12 +89,12 @@
 ```
 :::
 
-### 布局
+### Layout
 
 ::: demo
 <summary>
-  #### 布局
-  * 通过 `layout` 设置布局，可选值有 `left / right / bottom / top`
+  #### layout
+  * Position of tabs，accepted value: `left / right / bottom / top`
 </summary>
 
 ```html
@@ -132,14 +132,14 @@
 ```
 :::
 
-### 激活、禁用和回调
+### Active,Disabled and Callback
 
 ::: demo
 <summary>
-  #### 激活、禁用和回调
-  * 通过 `active-index` 设置默认打开第几个选项卡
-  * 通过 `disabled` 禁用某个选项卡
-  * 通过 `on-tab-click` 设置回调
+  #### advanced
+  * Sets default actived tabItem's key by `active-index`
+  * TabItem can be disabled
+  * Sets callback when tab is clicked by `on-tab-click`
 </summary>
 
 ```html
@@ -181,30 +181,30 @@
 
 #### Tabs
 
-| 成员        | 说明           | 类型               | 默认值       |
+| Properties        | Description           | Type        | Default       |
 |------------|----------------|--------------------|--------------|
-| type | tab样式类型，可选值有 `boxed / toggle` 和默认  | String | 无 |
-| is-full-width  | 是否铺满整行   | Boolean | false    |
-| layout | 布局，可选值有 `left / right / bottom / top`  | String | top |
-| size | tab大小，可选值为`small / large` | String | 无 |
-| alignment | 对齐方式 可选值为`left / right` | String | left   |
-| active-index | 初始打开tab的index(从0开始计数)  | Number | 0   |
-| on-tab-click | 标签切换时的回调  | Function | 无   |
+| type | different style of tab，accepted value: `boxed / toggle` and default  | String | - |
+| is-full-width  | whether the tab takes up the whole width (100%)  | Boolean | false    |
+| layout | Position of tabs，accepted value: `left / right / bottom / top`  | String | top |
+| size | size of tab，accepted value: `small / large` | String | - |
+| alignment | alignment accepted value:`left / right` | String | left   |
+| active-index | default actived tabItem's key(count from 0)  | Number | 0   |
+| on-tab-click | Callback when tab is switched	  | Function | -   |
 
 
 #### TabItem
 
-| 成员        | 说明           | 类型               | 默认值       |
+| Properties        | Description           | Type        | Default       |
 |------------|----------------|--------------------|--------------|
-| icon | 图标  | String | 无 |
-| label  | tab标签标题   | String(`required`) | 无    |
+| icon | icon of tab item  | String | - |
+| label  | title of tab item  | String(`required`) | -  |
 
 <script>
 export default {
   methods: {
     tabCallback(index) {
       this.$notify.info({
-        content: `打开了第 ${index + 1} 个tab`,
+        content: `opening index: ${index + 1} `,
       });
     },
   },

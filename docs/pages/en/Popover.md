@@ -1,16 +1,18 @@
-## Popover 气泡弹出框
+## Popover
 
-鼠标click/hover，弹出气泡似的浮层。类似popover，但可承载更多内容
+The floating card popped by clicking or hovering.
 
-### 代码演示
+-
+
+
+### Examples
 
 ::: demo
 <summary>
-  #### 基本
-  * 通过`trigger`设置触发方式
-  * 可通过slot设置内容
-  * 设置`always`为true，popover会保持打开状态
-  * 设置`disabled`为true，popover会被禁用
+  #### Basic
+  * `trigger` mode
+  * keep the popover open by setting `always="true"`
+  * popover can be disabled
 </summary>
 
 ```html
@@ -41,9 +43,9 @@
 
 ::: demo
 <summary>
-  #### 基本
-  * 通过`width`设置宽度
-  * 通过slot='content'设置内容
+  #### Width and Content
+  * set width by `width`
+  * `slot="content"` to set the content of the popover
 </summary>
 
 ```html
@@ -77,9 +79,9 @@
 
 ::: demo
 <summary>
-  #### 显示位置
-  * popover有12个可选位置
-  * popover可根据离视图距离自适应位置
+  #### Placement
+  * There are 12 placement options available.
+  * popover can be adapted to the viewport
 </summary>
 
 ```html
@@ -145,13 +147,13 @@
 
 ### API
 
-| 成员        | 说明           | 类型               | 默认值       |
+| Properties        | Description           | Type        | Default       |
 |------------|----------------|-------------------|--------------|
-| trigger    | 触发方式，`hover` `click` `focus`  | String | hover    |
-| title | 标题 | String | 无 |
-| content | 内容,可通过 `slot`设置，如 `<div slot="content">...</div>` | String | 无 |
-| width | 宽度 | Number | 无 |
-| placement | 位置，可选值：`top` `left` `right` `bottom` `topLeft` `topRight` `leftTop` `leftBottom` <br> `bottomLeft` `rightTop` `rightBottom` | String | 无 |
-| always | 是否保持打开状态 | Boolean | false   |
-| disabled | 是否禁用  | Boolean | false   |
+| trigger    | triggering mode: can be hover, focus, or click.| String | hover    |
+| title | title of the Popover | String | - |
+| content | content of the Popover,can be set by `slot`，such as `<div slot="content">...</div>` | String | - |
+| width | width of the Popover | Number | - |
+| placement | to set the position, which can be one of：`top` `left` `right` `bottom` `topLeft` `topRight` `leftTop` `leftBottom` `bottomLeft` `rightTop` `rightBottom` | String | - |
+| always | Whether the popover is always open | Boolean | false   |
+| disabled | Disable the popover  | Boolean | false   |
 

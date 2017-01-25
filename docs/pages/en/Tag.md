@@ -1,15 +1,15 @@
-## Tag 标签
+## Tag
 
-对不同事物的属性或维度进行标记和分类的小标签
+Tag for categorizing or markuping.
 
-### 代码演示
+### Examples
 
 ::: demo
 <summary>
-  #### 基本
-  * 默认有五种主题颜色的tag，包括`primary` `info` `success` `danger` `warning`，通过`type`来设置
-  * 也可以通过设置`color`直接设置颜色(color的优先级高于type)
-  * 设置rounded，tag显示为圆弧形
+  #### Basic
+  * There are 6 types of Alert: `primary` `info` `success` `danger` `warning` and default. sets it by `type` parameter.
+  * apply a different background color by `color` parameter (Higher priority than type)
+  * tag can be rounded
 </summary>
 
 ```html
@@ -30,8 +30,8 @@
 
 ::: demo
 <summary>
-  #### 设置大小
-  * tag有四种大小，除了默认大小还包括`small` `medium` `large`,通过`size`来设置
+  #### Sizes
+  * There are 4 sizes of tag: `small` `medium` `large`
 </summary>
 
 ```html
@@ -44,8 +44,8 @@
 
 ::: demo
 <summary>
-  #### 关闭和回调
-  * 可通过设置closable实现可关闭，on-close设置关闭时的回调函数
+  #### Close and Callback
+  * Tag could be closable by set closable property. Closable Tag supports onClose events
 </summary>
 
 ```html
@@ -57,7 +57,7 @@
       close() {
         this.$notify.open({
           type: 'success',
-          title: 'Tag close callback',
+          content: 'Tag close callback',
         });
       },
     },
@@ -69,14 +69,14 @@
 
 ### API
 
-| 成员        | 说明           | 类型               | 默认值       |
+| Properties        | Description           | Type        | Default       |
 |------------|----------------|--------------------|--------------|
-| type    | 主题颜色，可选值为`primary` `info` `success` `danger` `warning`   | String | 无    |
-| color | 背景色,如#87d087 | String | 无 |
-| size | 标签大小，可选值为`small` `medium` `large` | String | 无 |
-| rounded | 是否圆弧形 | Boolean | false   |
-| closable | 标签是否可关闭  | Boolean | false   |
-| on-close | 标签关闭时的回调  | Function | 无   |
+| type    | There are 6 types of Tag: `primary` `info` `success` `danger` `warning` and default   | String | -    |
+| color | The background color of Tag, such as #87d087 | String | - |
+| size | size of tag，accepted values: `small` `medium` `large` | String | - |
+| rounded | Whether the icon is rounded | Boolean | false   |
+| closable | Tag can be closed.  | Boolean | false   |
+| on-close | Callback when tag was closed  | Function | -   |
 
 <script>
   export default {
@@ -84,7 +84,7 @@
       close() {
         this.$notify.open({
           type: 'success',
-          title: 'Tag close callback',
+          content: 'Tag close callback',
         });
       },
     },

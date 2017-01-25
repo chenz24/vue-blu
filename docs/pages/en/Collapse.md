@@ -1,13 +1,13 @@
-## Collapse 折叠面板
+## Collapse
 
-可折叠展开的内容区域
+A content area which can be collapsed and expanded.
 
-### 代码演示
+### Examples
 
 ::: demo
 <summary>
-  #### 基本
-  * 通过`accordion`设置是否同时只能展开一个面板
+  #### Basic
+  * Accordion mode, only one panel can be expanded at a time.
 </summary>
 
 ```html
@@ -28,9 +28,9 @@
 
 ::: demo
 <summary>
-  #### 基本
-  * 同时打开多个面板
-  * 支持嵌套面板
+  #### Advanced
+  * open multiple panels
+  * Collapse is nested inside the Collapse
 </summary>
 
 ```html
@@ -56,15 +56,15 @@
 #### Collapse
 
 
-| 成员        | 说明           | 类型               | 默认值       |
+| Properties        | Description           | Type        | Default       |
 |------------|----------------|--------------------|--------------|
-| accordion | 手风琴模式，即同时只能展开一个面板 | Boolean | false   |
+| accordion | Accordion mode, only one panel can be expanded at a time | Boolean | false   |
 
 
 #### CollapseItem
 
 
-| 成员        | 说明           | 类型               | 默认值       |
+| Properties        | Description           | Type        | Default       |
 |------------|----------------|--------------------|--------------|
-| title    | 面板标题   | String | 无    |
-| actived | 是否展开 | Boolean | false   |
+| title    | title of the panel	   | String | -    |
+| actived | whether the panel is active | Boolean | false   |

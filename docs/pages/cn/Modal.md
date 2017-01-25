@@ -11,6 +11,7 @@
   * 通过设置`cancel-text`和`ok-text`自定义按钮文字
   * 设置`backdrop`为false可禁用遮罩层
   * 设置`backdrop-closable`为false可禁用遮罩层关闭
+  * 设置`transition`为modal自定义动画效果，可选值见 Transition 那一章
 </summary>
 
 ```html
@@ -23,7 +24,7 @@
 </modal>
 <button @click="toggle" class="button is-primary">基本模态框</button>
 
-<modal title="自定义按钮文字" :is-show="isShow2" :show-footer="false" :show-header="true" @close="isShow2=false" ok-text="确定" cancel-text="取消">
+<modal title="自定义按钮文字" :is-show="isShow2" :show-header="true" @close="isShow2=false" ok-text="确定" cancel-text="取消">
   <h4>Text in a modal</h4>
   <p>
     Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem. Praesent commodo cursus magna,
