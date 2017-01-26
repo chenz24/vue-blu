@@ -1,5 +1,5 @@
 /*!
- * vue-blu v0.1.5
+ * vue-blu v0.1.9
  * (c) 2017 Chenz <chenz8606@gmail.com>
  * Released under the MIT License.
  * Documentation: https://chenz24.github.io/vue-blu/#/
@@ -30,6 +30,7 @@ import Pagination from './components/pagination';
 import { Steps, Step } from './components/steps';
 import InputNumber from './components/input-number';
 import Datepicker from './components/datepicker';
+import { Select, Option } from './components/select';
 
 import Notify from './components/notify';
 import MessageModal from './components/message-modal';
@@ -70,13 +71,24 @@ const components = {
   Step,
   InputNumber,
   Datepicker,
+  bSelect: Select,
+  bOption: Option,
 };
 
-export default {
-  install(Vue, options) {// eslint-disable-line
-    Object.keys(components).forEach(key => Vue.component(key, components[key]));
+const install = function (Vue, options) {// eslint-disable-line
+  if (install.installed) return;
 
-    Vue.prototype.$notify = Notify;
-    Vue.prototype.$modal = MessageModal;
-  },
+  Object.keys(components).forEach(key => Vue.component(key, components[key]));
+
+  Vue.prototype.$notify = Notify;
+  Vue.prototype.$modal = MessageModal;
+};
+
+if (typeof window !== 'undefined' && window.Vue) {
+  install(window.Vue);
+}
+
+module.exports = {
+  version: '0.1.9',
+  install,
 };
