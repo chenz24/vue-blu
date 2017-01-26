@@ -42,8 +42,8 @@ Create a smooth off-canvas sidebar that slides in and out of the page
 
 ### API
 
-Aside component is inherited from modal component,so it has all feature of modal，and the apis documentation can refer to modal.
-the only one different is `position` parameter.
+Aside component is inherited from modal component,so it has all feature of modal,Consult
+<router-link to="/en/components/modal">Modal's documentation</router-link> to find more APIs.
 
 | Properties        | Description           | Type        | Default       |
 |------------|-----------|--------|--------------|

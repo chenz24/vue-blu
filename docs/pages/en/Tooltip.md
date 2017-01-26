@@ -1,15 +1,15 @@
-## Tooltip 文字提示
+## Tooltip
 
-简单的文字提示气泡框，常用于鼠标hover时
+A simple text popup tip.
 
-### 代码演示
+### Examples
 
 ::: demo
 <summary>
-  #### 基本
-  * 通过`trigger`设置触发方式
-  * 设置`always`为true，tooltip会保持打开状态
-  * 设置`disabled`为true，tooltip会被禁用
+  #### Basic
+  * Three `trigger` modes
+  * keep the tooltip open by setting `always="true"`
+  * Tooltip can be disabled
 </summary>
 
 ```html
@@ -40,9 +40,9 @@
 
 ::: demo
 <summary>
-  #### 显示位置
-  * tooltip有12个可选位置
-  * tooltip可根据离视图距离自适应位置
+  #### Placement
+  * There are 12 placement options available.
+  * Tooltip can be adapted to the viewport.
 </summary>
 
 ```html
@@ -108,13 +108,13 @@
 
 ### API
 
-| 成员        | 说明           | 类型               | 默认值       |
+| Properties | Description    | Type        | Default       |
 |------------|----------------|-------------------|--------------|
-| trigger    | 触发方式  | String | hover    |
-| content | 内容 | String | 无 |
-| placement | 位置，可选值：`top` `left` `right` `bottom` `topLeft` `topRight` `leftTop` `leftBottom` <br> `bottomLeft` `rightTop` `rightBottom` | String | 无 |
-| always | 是否保持打开状态 | Boolean | false   |
-| disabled | 是否禁用  | Boolean | false   |
+| trigger    | triggering mode, can be hover, focus, or click. | String | hover    |
+| content    | content of tooltip | String | - |
+| placement | to set the position, which can be one of：`top` `left` `right` `bottom` `topLeft` `topRight` `leftTop` `leftBottom` `bottomLeft` `rightTop` `rightBottom` | String | top |
+| always | Whether the tooltip is always open | Boolean | false   |
+| disabled | Disable the tooltip  | Boolean | false   |
 
 
 <style>

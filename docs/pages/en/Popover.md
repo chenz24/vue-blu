@@ -10,7 +10,7 @@ The floating card popped by clicking or hovering.
 ::: demo
 <summary>
   #### Basic
-  * `trigger` mode
+  * Three `trigger` modes
   * keep the popover open by setting `always="true"`
   * popover can be disabled
 </summary>
@@ -81,7 +81,7 @@ The floating card popped by clicking or hovering.
 <summary>
   #### Placement
   * There are 12 placement options available.
-  * popover can be adapted to the viewport
+  * Popover can be adapted to the viewport
 </summary>
 
 ```html
