@@ -1,6 +1,6 @@
 {
   "name": "vue-blu",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "A UI Component Library Base on Vue.js and Bulma",
   "author": "Chenz <chenz8606@gmail.com>",
   "private": false,
@@ -36,8 +36,7 @@
     "jump.js": "^1.0.1",
     "lodash": "^4.17.2",
     "popper.js": "^0.6.4",
-    "vue": "^2.1.10",
-    "vue-router": "^2.1.1"
+    "vue": "^2.1.10"
   },
   "devDependencies": {
     "autoprefixer": "^6.4.0",

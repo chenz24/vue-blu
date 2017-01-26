@@ -32,7 +32,7 @@ npm run package
 
 ## Version
 
-- 0.1.8 beta
+- 0.1.9 beta
 
 ## Compatibility
 
