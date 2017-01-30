@@ -1,15 +1,15 @@
-## Timeline 时间线
+## Timeline
 
-垂直按时间展示的信息流
+Vertical display timeline.
 
-### 代码演示
+### Examples
 
 ::: demo
 <summary>
-  #### 基础
-  * 通过`date`设置时间
-  * 默认有五种主题颜色，包括`primary` `info` `success` `danger` `warning`，通过`type`来设置
-  * `timeline-item`采用`slot`接收任意形式的内容
+  #### Basic
+  * Sets date&time by `date` parameter.
+  * color of node，including `primary` `info` `success` `danger` `warning`.
+  * Setting content by `slot`
 </summary>
 
 ```html
@@ -30,8 +30,8 @@
 
 ::: demo
 <summary>
-  #### 更多设置
-  * `timeline-item`可通过`icon`参数设置图标
+  #### More settings
+  * Sets icon of timeline-item by `icon` parameter.
 </summary>
 
 ```html
@@ -56,8 +56,8 @@
 
 #### timeline-item
 
-| 成员        | 说明           | 类型               | 默认值       |
+| Properties | Description    | Type        | Default       |
 |------------|----------------|--------------------|--------------|
-| type    | 主题颜色，可选值为`primary` `info` `success` `danger` `warning`   | String | 无    |
-| date | 日期时间 | String | 无   |
-| icon | 图标  | String | 无   |
+| type    | color of node，accepted value: `primary` `info` `success` `danger` `warning`   | String | - |
+| date | date string (2 minutes ago, Sun, 11 Feb... etc) | String | - |
+| icon | icon of timeline item  | String | -  |

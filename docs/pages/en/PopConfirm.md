@@ -7,11 +7,10 @@ A simple and compact confirmation dialog of an action.
 ::: demo
 <summary>
   #### Basic
-  * 基于 Popover 开发，除了内容只能是纯文字外，Popover的其他API都支持
-  * 支持通过 `show-ok` `show-cancel` 隐藏或显示按钮
-  * 通过 `ok-text` `cancel-text` 自定义按钮文字
-  * 通过 `on-ok` `on-cancel` 设置对应的回调
-  * 通过 `icon` 设置图标
+  * Display or hidden buttons by `show-ok` and `show-cancel`.
+  * Customize text of buttons by `ok-text` and `cancel-text`.
+  * Sets callback by `on-ok` and `on-cancel`.
+  * Support setting icon
 </summary>
 
 ```html
