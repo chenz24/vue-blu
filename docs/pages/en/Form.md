@@ -1,17 +1,14 @@
-## Form 表单
+## Form
 
-对于表单的样式和布局等展现方面的实现，我们认为原生的HTML元素加CSS足以满足，特别是有了Bulma。所以Blu的Form基本全部依赖于Bulma。对于某些功能性的表单组件如AutoComplete、Select，
-Blu会另有封装。
+All generic form controls, designed for consistency. For more information please refer to [http://bulma.io/documentation/elements/form/](http://bulma.io/documentation/elements/form/)
 
-下面介绍一下Form，内容主要来自于 [http://bulma.io/documentation/elements/form/](http://bulma.io/documentation/elements/form/)
-
-### 代码演示
+### Examples
 
 ::: demo
 <summary>
-  #### 基本
-  * 使用 `control` 作为元素的容器
-  * 使用 `.label` `.input` `.textarea` `.select` `.checkbox` `.radio` `.button` `.help` 控制相应表单元素的样式
+  #### Basic
+  * When combining several controls in a form, use the .control class as a container, to keep the spacing consistent.
+  * `.label` `.input` `.textarea` `.select` `.checkbox` `.radio` `.button` `.help` form controls classes are supported
 </summary>
 
 ```html
@@ -67,12 +64,12 @@ Blu会另有封装。
 ```
 :::
 
-#### Color 颜色
+#### Colors
 
 ::: demo
 <summary>
-  #### 颜色
-  * 五种主题颜色 `is-primary` `is-info` `is-success` `is-warning` `is-danger`
+  #### colors
+  * `is-primary` `is-info` `is-success` `is-warning` `is-danger`
 </summary>
 
 ```html
@@ -94,12 +91,12 @@ Blu会另有封装。
 ```
 :::
 
-#### Size 大小
+#### Size
 
 ::: demo
 <summary>
-  #### 尺寸
-  * 针对input和select有效 `is-small` `空` `is-medium` `is-large`
+  #### size
+  * 针对input和select有效 `is-small` `is-medium` `is-large`
 </summary>
 
 ```html
@@ -122,12 +119,12 @@ Blu会另有封装。
 ```
 :::
 
-#### State 状态
+#### State
 
 ::: demo
 <summary>
-  #### 状态
-  * loading 或 disabled `is-loading` `is-disabled`
+  #### state
+  * loading or disabled `is-loading` `is-disabled`
 </summary>
 
 ```html
@@ -165,12 +162,12 @@ Blu会另有封装。
 ```
 :::
 
-#### Icon 配合Font Awesome
+#### Icon With Font Awesome
 
 ::: demo
 <summary>
   #### Icon
-  * 通过 `has-icon` 轻松设置icon
+  * Setting icon by `has-icon` class
 </summary>
 
 ```html
@@ -196,13 +193,14 @@ Blu会另有封装。
 :::
 
 
-#### Addons 表单组合
+#### Addons Form addons
 
 ::: demo
 <summary>
-  #### 组合
-  * 通过 `has-addons` 设置表单与按钮等元素的组合显示
-  * 通过 `has-addons-centered` `has-addons-right` 设置对齐
+  #### addons
+  * If you want to attach controls together, use the `has-addons` modifier on the control container
+  * Use the is-expanded modifier on the element you want to fill up the remaining space.
+  * Use the `has-addons-centered` or the `has-addons-right` modifiers to alter the alignment.
 </summary>
 
 ```html
@@ -227,7 +225,7 @@ Blu会另有封装。
   </a>
 </p>
 
-<p>对齐方式</p>
+<p>Alignment</p>
 <p class="control has-addons has-addons-centered">
   <span class="select">
     <select>
@@ -257,12 +255,12 @@ Blu会另有封装。
 ```
 :::
 
-#### 表单组
+#### Form group
 
 ::: demo
 <summary>
-  #### 表单组
-  * 如果你想把 `control` 容器放在一行， 可以通过在`.control` 上添加 `is-grouped`样式实现
+  #### form group
+  * If you want to group controls together, use the is-grouped modifier on the control container.
 </summary>
 
 ```html
@@ -293,14 +291,14 @@ Blu会另有封装。
 :::
 
 
-#### 水平表单
+#### Horizontal form
 
 ::: demo
 <summary>
-  #### 水平表单
-  * 在 `control` 容器上添加 `is-horizontal`
-  * 使用 `control-label` 作为label的容器
-  * 使用 `control` 作为表单元素的容器
+  #### horizontal form
+  * use the `is-horizontal` modifier on the `control` container.
+  * `control-label` for the side label
+  * `control` for the input/select/textarea container
 </summary>
 
 ```html
