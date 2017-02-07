@@ -65,5 +65,6 @@ export default {
 | on-text   | 开启时的文字   | String | 无    |
 | off-text | 关闭时的文字 | String | 无 |
 | size | 开关的大小，可选值为`small`  | String | 无 |
+| checked | 是否开启  | Boolean | false   |
 | disabled | 是否禁用  | Boolean | false   |
 | on-change | 开关切换时的回调  | Function | 无   |

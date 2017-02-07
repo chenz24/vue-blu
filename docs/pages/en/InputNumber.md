@@ -53,7 +53,7 @@ Enter a number within certain range with the mouse or keyboard.
 | min    | min value   | Number | 0    |
 | max | max value | Number | Infinity |
 | size | size of the component,it can be `small`  | String | - |
-| mode | the position of buttons，when `s`时，按钮放在两边  | String | 无 |
+| mode | the position of buttons，the increase and decrease buttons will be on both sides of input when value is `s`  | String | - |
 | step | The number to which the current value is increased or decreased. | Number | 1   |
 | disabled | Enable or disable the component  | Boolean | false   |
 | on-change | The callback triggered when the value is changed.	  | Function(val) | -   |
