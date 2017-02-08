@@ -18,6 +18,7 @@
                   <span class="icon"><i class="fa fa-github"></i></span>
                   <span>GitHub</span>
                 </a>
+                <router-link class="button is-primary is-active" to="/"><span>中</span></router-link>
               </span>
             </div>
           </nav>
