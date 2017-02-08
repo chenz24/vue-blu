@@ -93,7 +93,7 @@
 | total | 数据总数 | Number | 无   |
 | layout | 分页项目及布局  | String | `'total, pager, sizer, jumper'`   |
 | align | 对齐方式，默认居中，可选值 `right` `left` | String |  无  |
-| change | 分页回调  | Function | 无   |
+| change | 分页回调  | Function(page) | 无   |
 | size-options | 指定每页显示多少条  | Array | 无   |
 
 <script>

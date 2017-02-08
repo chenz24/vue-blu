@@ -96,7 +96,7 @@ All generic form controls, designed for consistency. For more information please
 ::: demo
 <summary>
   #### size
-  * 针对input和select有效 `is-small` `is-medium` `is-large`
+  * effective for `input` and `select`, `is-small` `is-medium` `is-large`
 </summary>
 
 ```html

@@ -1,17 +1,16 @@
-## DatePicker 日期时间选择器
+## DatePicker
 
-日期时间选择器,基于轻量且强大的 [flatpickr](https://chmln.github.io/flatpickr/)
+To select or input a date. Base on [flatpickr](https://chmln.github.io/flatpickr/)
 
 
-### 代码演示
+### Examples
 
 ::: demo
 <summary>
-  #### 基本
-  * 可使用 `v-model` 绑定数据
-  * 通过配置项 `enableTime` 开启时间选择
-  * 可通过 `minDate` `maxDate` 配置可选时间范围
-  * 丰富的格式化选项
+  #### Basic
+  * two-way binding by `v-model`
+  * Make it a datetime picker by setting `enableTime`
+  * Limit the range of available dates with `minDate` and `maxDate`
 </summary>
 
 ```html
@@ -23,53 +22,53 @@
 
 <div class="columns">
   <div class="column is-3">
-    <datepicker placeholder="默认值及数据绑定" :options="dateOptions" v-model="date1"></datepicker>
+    <datepicker placeholder="Preloading Dates and two-way binding" :options="dateOptions" v-model="date1"></datepicker>
   </div>
   <div class="column is-2">{{ date1 }}</div>
 </div>
 
 <div class="columns">
   <div class="column is-3">
-    <datepicker placeholder="开启时间选择.." :options="{enableTime: true}"></datepicker>
+    <datepicker placeholder="enableTime.." :options="{enableTime: true}"></datepicker>
   </div>
 </div>
 
 <div class="columns">
   <div class="column is-4">
-    <datepicker placeholder="格式化时间.." :options="{enableTime: true, altInput: true, altFormat: 'F j, Y h:i K'}"></datepicker>
+    <datepicker placeholder="Format time.." :options="{enableTime: true, altInput: true, altFormat: 'F j, Y h:i K'}"></datepicker>
   </div>
 </div>
 
 <div class="columns">
   <div class="column is-4">
-    <datepicker placeholder="设置可选范围.." :options="{minDate: new Date(), maxDate: '2017-12-20',}"></datepicker>
+    <datepicker placeholder="range.." :options="{minDate: new Date(), maxDate: '2017-12-20',}"></datepicker>
   </div>
 </div>
 
-<datepicker placeholder="按钮选择" :options="{wrap: true, clickOpens: false,}" class="is-grouped"></datepicker>
+<datepicker placeholder="Button Trigger" :options="{wrap: true, clickOpens: false,}" class="is-grouped"></datepicker>
 
 ```
 :::
 
-#### 禁止或开启某个日期的选择
+#### Enabling or Disabling dates
 
 ::: demo
 <summary>
-  #### 禁止 & 开启
-  * 可通过配置禁用某些日期的选择(接受函数配置)
+  #### enable & disable
+  * Disable or enable a date interval, or a specific date(Boolean functions are also supported)
 </summary>
 
 ```html
 
 <div class="columns">
   <div class="column is-3">
-    <datepicker placeholder="奇数日期不可选" :options="disableOddDays"></datepicker>
+    <datepicker placeholder="disable odd days" :options="disableOddDays"></datepicker>
   </div>
 </div>
 
 <div class="columns">
   <div class="column is-3">
-    <datepicker placeholder="七日内可选" :options="enableOddDays"></datepicker>
+    <datepicker placeholder="7 days from now" :options="enableOddDays"></datepicker>
   </div>
 </div>
 
@@ -100,105 +99,105 @@
 ```
 :::
 
-#### 时间选择
+#### Time picker
 
 ::: demo
 <summary>
-  #### 时间选择
-  * 设置 `weekNumbers` 为 true
+  #### time picker
+  * Enables time picker by `enableTime`
 </summary>
 
 ```html
 <div class="columns">
   <div class="column is-4">
-    <datepicker placeholder="时间选择" :options="{enableTime: true, enableSeconds: true, noCalendar: true, time_24hr: true}"></datepicker>
+    <datepicker placeholder="enableTime" :options="{enableTime: true, enableSeconds: true, noCalendar: true, time_24hr: true}"></datepicker>
   </div>
 </div>
 ```
 :::
 
 
-#### 日期范围
+#### Selecting a Range of Dates
 
 ::: demo
 <summary>
-  #### 范围
-  * 设置`mode`为range
+  #### range
+  * Set `mode: 'range'`
 </summary>
 
 ```html
 <div class="columns">
   <div class="column is-3">
-    <datepicker placeholder="范围" :options="{mode: 'range'}"></datepicker>
+    <datepicker placeholder="range" :options="{mode: 'range'}"></datepicker>
   </div>
 </div>
 ```
 :::
 
-#### 同时选择多个日期
+#### Selecting Multiple Dates
 
 ::: demo
 <summary>
-  #### 多选
-  * 设置 `mode` 为multiple
+  #### multiple
+  * Set `mode: 'multiple'`
 </summary>
 
 ```html
 <div class="columns">
   <div class="column is-5">
-    <datepicker placeholder="多选" :options="{mode: 'multiple'}"></datepicker>
+    <datepicker placeholder="multiple" :options="{mode: 'multiple'}"></datepicker>
   </div>
 </div>
 ```
 :::
 
 
-#### inline模式
+#### Inline Calendar
 
 ::: demo
 <summary>
   #### inline
-  * 设置 `inline` 为 true
+  * Set `inline: true`
 </summary>
 
 ```html
 <div class="columns">
   <div class="column is-4">
-    <datepicker placeholder="inline模式" :options="{inline: true}"></datepicker>
+    <datepicker placeholder="inline mode" :options="{inline: true}"></datepicker>
   </div>
 </div>
 ```
 :::
 
-#### 显示第几周
+#### Show weeks
 
 ::: demo
 <summary>
   ####
-  * 设置 `weekNumbers` 为 true
+  * Set `weekNumbers: true`
 </summary>
 
 ```html
 <div class="columns">
   <div class="column is-4">
-    <datepicker placeholder="显示周" :options="{inline: true, weekNumbers: true}"></datepicker>
+    <datepicker placeholder="show weeks" :options="{inline: true, weekNumbers: true}"></datepicker>
   </div>
 </div>
 ```
 :::
 
-#### 国际化
+#### Localization
 
 ::: demo
 <summary>
   #### l10n
-  * 通过 `locale` 设置语言
+  * Over 25 languages are available.
 </summary>
 
 ```html
 <div class="columns">
   <div class="column is-4">
-    <datepicker placeholder="国际化" :options="localeOption"></datepicker>
+    <datepicker placeholder="Localization" :options="localeOption"></datepicker>
   </div>
 </div>
 
@@ -218,9 +217,17 @@ export default {
 ```
 :::
 
-#### 更多
+#### More
 
-`注` flatpickr有更详尽的配置说明，请参见 [flatpickr](https://chmln.github.io/flatpickr/)
+`Note` For more information，Please refer to [flatpickr](https://chmln.github.io/flatpickr/)
+
+### API
+
+| Properties        | Description           | Type        | Default       |
+|------------|----------------|--------------------|--------------|
+| options    | DatePicker config (<a href="https://chmln.github.io/flatpickr/">Documentation</a> )   | Object | -    |
+| name    | name of input   | String | -  |
+| placeholder | placeholder of the datepicker  | String | - |
 
 <script>
 import { zh } from 'flatpickr/dist/l10n/zh';
