@@ -36,7 +36,8 @@
     "jump.js": "^1.0.1",
     "lodash": "^4.17.2",
     "popper.js": "^0.6.4",
-    "vue": "^2.1.10"
+    "vue": "^2.1.10",
+    "vue-router": "^2.1.1"
   },
   "devDependencies": {
     "autoprefixer": "^6.4.0",

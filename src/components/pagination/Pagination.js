@@ -111,7 +111,10 @@ export default {
       const pageSize = e.target.value;
       this.interPageSize = pageSize;
       this.totalPage = this.calcTotalPage(pageSize);
-      this.pageSizeChange(this.current, pageSize);
+      if (this.interCurrent > this.totalPage) {
+        this.handleChangePage(this.totalPage);
+      }
+      this.pageSizeChange(this.interCurrent, pageSize);
     },
   },
 
