@@ -34,8 +34,17 @@ export default {
         if (this.value && this.value.indexOf(child.val) >= 0) {
           child.isChecked = true;
           child.realVal = child.val;
+        } else {
+          child.isChecked = false;
+          child.realVal = null;
         }
       });
+    },
+  },
+
+  watch: {
+    value() {
+      this.initChecked();
     },
   },
 
