@@ -31,7 +31,7 @@
   },
   "dependencies": {
     "bulma": "^0.2.3",
-    "flatpickr": "^2.2.4",
+    "flatpickr": "^2.4.3",
     "font-awesome": "^4.7.0",
     "jump.js": "^1.0.1",
     "lodash": "^4.17.2",
