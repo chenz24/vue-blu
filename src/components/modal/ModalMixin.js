@@ -117,6 +117,9 @@ const ModalMixin = {
   mounted() {
     this.$nextTick(() => {
       document.body.appendChild(this.$el);
+      if (this.isShow) {
+        this.active();
+      }
     });
   },
 
