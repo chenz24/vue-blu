@@ -30,7 +30,6 @@ import Pagination from './components/pagination';
 import { Steps, Step } from './components/steps';
 import InputNumber from './components/input-number';
 import Datepicker from './components/datepicker';
-import { Select, Option } from './components/select';
 
 import Notify from './components/notify';
 import MessageModal from './components/message-modal';
@@ -71,8 +70,6 @@ const components = {
   Step,
   InputNumber,
   Datepicker,
-  bSelect: Select,
-  bOption: Option,
 };
 
 const install = function (Vue, options) {// eslint-disable-line
