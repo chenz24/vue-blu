@@ -62,6 +62,9 @@ export default {
               );
             })
           }
+          {
+            this.$parent.height ? <th width="15" style="padding: 8px 0"></th> : ''
+          }
         </tr>
       </thead>
     );
