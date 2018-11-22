@@ -21,7 +21,7 @@
         <table-body :state="state" :checkable="checkable" :data="showData" :showIndex="showIndex"></table-body>
       </table>
     </div>
-    <pagination :total="totalCnt" align="right" :change="handlePageChange" :pageSizeChange="handlePageSizeChange" v-if="totalCnt"></pagination>
+    <pagination :layout="paginationLayout" :total="totalCnt" :align="paginationPosition" :change="handlePageChange" :pageSizeChange="handlePageSizeChange" v-if="totalCnt"></pagination>
   </div>
 </template>
 <script>
@@ -54,6 +54,14 @@ export default {
     onSelectAll: {
       type: Function,
       default() {},
+    },
+    paginationLayout: {
+      type: String,
+      default: 'total, pager, sizer, jumper',
+    },
+    paginationPosition: {
+      type: String,
+      default: 'right',
     },
     rowKey: String,
     bordered: Boolean,
