@@ -100,7 +100,7 @@
     "selenium-server": "2.53.1",
     "semver": "^5.3.0",
     "shelljs": "^0.7.4",
-    "sinon": "^1.17.3",
+    "sinon": "^1.17.7",
     "sinon-chai": "^2.8.0",
     "transliteration": "^1.1.16",
     "url-loader": "^0.5.7",
