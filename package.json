@@ -80,7 +80,6 @@
     "karma-coverage": "^1.1.1",
     "karma-mocha": "^1.2.0",
     "karma-phantomjs-launcher": "^1.0.0",
-    "karma-sinon-chai": "^1.2.0",
     "karma-sourcemap-loader": "^0.3.7",
     "karma-spec-reporter": "0.0.26",
     "karma-webpack": "^1.7.0",
@@ -110,7 +109,8 @@
     "webpack": "^1.13.2",
     "webpack-dev-middleware": "^1.8.3",
     "webpack-hot-middleware": "^2.12.2",
-    "webpack-merge": "^0.14.1"
+    "webpack-merge": "^0.14.1",
+    "fsevents": "*"
   },
   "engines": {
     "node": ">= 4.0.0",
