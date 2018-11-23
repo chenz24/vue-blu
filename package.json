@@ -22,13 +22,13 @@
   ],
   "scripts": {
     "dev": "node build/dev-server.js",
-    "build": "node build/build.js && node build/package.js",
+    "build": "node build/build.js",
     "package": "node build/package.js",
     "unit": "karma start test/unit/karma.conf.js --single-run",
     "e2e": "node test/e2e/runner.js",
     "test": "npm run unit && npm run e2e",
     "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs",
-    "prepublish": "npm run build"
+    "postinstall": "npm run package"
   },
   "dependencies": {
     "bulma": "^0.2.3",
