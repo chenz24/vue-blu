@@ -489,6 +489,8 @@ export default {
     pagination() {
       return {
         total: this.dataSource.length,
+        layout: 'pager',      
+        position: 'center'
       };
     },
     dataSource2() {

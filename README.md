@@ -1,5 +1,6 @@
 # Attention
 I'm very sorry about the lack of concern about this library Recently. So busy in doing other things and I have no time to  maintain it. I will be back in 2 about months. Thanks everyone!(20170526)
+Thanks to Chenz, because of his oblivion to vue-blu project. We generated new version of vue-blu
 
 近期其他事过于繁忙，以致没时间维护这个库了。很抱歉，不能更新和回答大家的问题。我会在大约两个月后回来继续更新维护它。谢谢大家的支持！(20170526)
 
@@ -12,13 +13,13 @@ Vue-Blu is an ui components library base on VueJS and Bulma that helps you build
 ## Installation
 Blu is available on NPM
 ```
-npm install vue-blu --save
+npm install vue-blu-2 --save
 ```
 ### Quick Start
 ```
 import Vue from 'vue'
-import VueBlu from 'vue-blu'
-import 'vue-blu/dist/css/vue-blu.min.css'
+import VueBlu from 'vue-blu-2'
+import 'vue-blu-2/dist/css/vue-blu.min.css'
 
 Vue.use(VueBlu)
 
@@ -37,7 +38,7 @@ npm run package
 
 ## Version
 
-- 0.1.9 beta
+- 0.2.0 
 
 ## Compatibility
 

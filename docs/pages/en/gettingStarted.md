@@ -13,7 +13,7 @@ developing fast and powerful web application
 ## Install
 
 ```bash
-$ npm install vue-blu --save
+$ npm install vue-blu-2 --save
 ```
 
 ## Quick Start
@@ -21,8 +21,8 @@ $ npm install vue-blu --save
 
 ```
 import Vue from 'vue'
-import VueBlu from 'vue-blu'
-import 'vue-blu/dist/css/vue-blu.min.css'
+import VueBlu from 'vue-blu-2'
+import 'vue-blu-2/dist/css/vue-blu.min.css'
 
 Vue.use(VueBlu)
 
@@ -49,7 +49,7 @@ Vue.use(VueBlu)
 
 ## Version
 
-- 0.1.7 beta
+- 0.2.0
 
 ## Compatibility
 
