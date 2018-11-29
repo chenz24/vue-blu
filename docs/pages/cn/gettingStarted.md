@@ -12,7 +12,7 @@ Vue-Blu是基于[Vuejs](http://www.vuejs.org/)和[Bulma](http://bulma.io/)开发
 ## 安装
 
 ```bash
-$ npm install vue-blu --save
+$ npm install vue-blu-2 --save
 ```
 
 ## 快速开始
@@ -20,8 +20,8 @@ $ npm install vue-blu --save
 
 ```
 import Vue from 'vue'
-import VueBlu from 'vue-blu'
-import 'vue-blu/dist/css/vue-blu.min.css'
+import VueBlu from 'vue-blu-2'
+import 'vue-blu-2/dist/css/vue-blu.min.css'
 
 Vue.use(VueBlu)
 
@@ -48,7 +48,7 @@ Vue.use(VueBlu)
 
 ## 版本
 
-- 0.1.8 beta
+- 0.2.0
 
 ## 兼容性
 
