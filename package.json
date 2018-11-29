@@ -1,5 +1,5 @@
 {
-  "name": "vue-blu",
+  "name": "vue-blu-2",
   "version": "0.1.9",
   "description": "A UI Component Library Base on Vue.js and Bulma",
   "author": "Chenz <chenz8606@gmail.com>",
@@ -17,7 +17,7 @@
   "keywords": [
     "vue",
     "vue component",
-    "vue-blu",
+    "vue-blu-2",
     "blu"
   ],
   "scripts": {
