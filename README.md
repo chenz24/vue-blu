@@ -13,13 +13,13 @@ Vue-Blu is an ui components library base on VueJS and Bulma that helps you build
 ## Installation
 Blu is available on NPM
 ```
-npm install vue-blu-2 --save
+npm install vue-bulma2 --save
 ```
 ### Quick Start
 ```
 import Vue from 'vue'
-import VueBlu from 'vue-blu-2'
-import 'vue-blu-2/dist/css/vue-blu.min.css'
+import VueBlu from 'vue-bulma2'
+import 'vue-bulma2/dist/css/vue-blu.min.css'
 
 Vue.use(VueBlu)
 

@@ -1,5 +1,5 @@
 {
-  "name": "vue-blu-2",
+  "name": "vue-bulma2",
   "version": "0.2.0",
   "description": "A UI Component Library Base on Vue.js and Bulma",
   "author": "Chenz <chenz8606@gmail.com>",
@@ -17,7 +17,7 @@
   "keywords": [
     "vue",
     "vue component",
-    "vue-blu-2",
+    "vue-bulma2",
     "blu"
   ],
   "scripts": {
@@ -30,6 +30,7 @@
     "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs"
   },
   "dependencies": {
+    "basic": "^2.0.3",
     "bulma": "^0.2.3",
     "flatpickr": "^2.4.3",
     "font-awesome": "^4.7.0",
