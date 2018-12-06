@@ -28,6 +28,12 @@ Vue.use(VueBlu)
 ## Development
 
 ```bash
+# install phyton 2.7
+If it is not installed, it is required for sass build
+# install sass
+npm install node-sass --save
+# install C++ compiler
+Modify visual studio and install C++ package
 # install dependencies
 npm install
 # serve with hot reload at localhost:8080
