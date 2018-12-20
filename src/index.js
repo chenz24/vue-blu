@@ -2,7 +2,6 @@
  * vue-blu v0.1.9
  * (c) 2017 Chenz <chenz8606@gmail.com>
  * Released under the MIT License.
- * Documentation: https://chenz24.github.io/vue-blu/#/
  */
 import './scss/main.scss';
 

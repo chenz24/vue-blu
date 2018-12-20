@@ -7,8 +7,6 @@ Thanks to Chenz, because of his oblivion to vue-blu project. We generated new ve
 # Vue-Blu
 Vue-Blu is an ui components library base on VueJS and Bulma that helps you build your web application easily
 
-## Documents & Demo
-[documents & demo](https://chenz24.github.io/vue-blu/#/)
 
 ## Installation
 Blu is available on NPM

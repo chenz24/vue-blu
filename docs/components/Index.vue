@@ -14,7 +14,7 @@
             </span>
             <div class="nav-right nav-menu">
               <span class="nav-item">
-                <a class="button is-light is-outlined" href="https://github.com/chenz24/vue-blu" target="_blank">
+                <a class="button is-light is-outlined" href="https://github.com/EurekoSigorta/vue-bulma2" target="_blank">
                   <span class="icon"><i class="fa fa-github"></i></span>
                   <span>GitHub</span>
                 </a>
@@ -56,7 +56,7 @@
             <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.
           </p>
           <p>
-            <a class="icon" href="https://github.com/chenz24/vue-blu">
+            <a class="icon" href="https://github.com/EurekoSigorta/vue-bulma2">
               <i class="fa fa-github"></i>
             </a>
           </p>
