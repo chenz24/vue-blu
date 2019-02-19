@@ -63,7 +63,7 @@ export default {
       const scrollTop = this.getScroll(window, true) + this.offsets;// handle setting offset
       const elementOffset = this.getOffset(this.$el);
 
-      if (!this.affixed && scrollTop > elementOffset.top) {
+      if (!this.affixed && scrolllTop > elementOffset.top) {
         this.affixed = true;
         this.styles = {
           top: `${this.offsets}px`,
