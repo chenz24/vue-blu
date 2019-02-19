@@ -55,3 +55,6 @@ Blu is inspired or powered by these people or projects so I want to thank them
 
 ## Copyright and License
 Code and documentation copyright 2017 **Chenz**. Code released under the [MIT license](LICENSE.md). Docs released under Creative Commons.
+
+## TODO
+Migrate to Vue 3.x in future.
