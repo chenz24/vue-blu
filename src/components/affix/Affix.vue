@@ -21,6 +21,7 @@ export default {
       default: '',
     },
   },
+
   data() {
     return {
       affixed: false,
@@ -29,6 +30,7 @@ export default {
       wrapStyle: {},
     };
   },
+
   methods: {
     getScroll(w, top) {
       let ret = w[`page${(top ? 'Y' : 'X')}Offset`];
@@ -63,7 +65,7 @@ export default {
       const scrollTop = this.getScroll(window, true) + this.offsets;// handle setting offset
       const elementOffset = this.getOffset(this.$el);
 
-      if (!this.affixed && scrolllTop > elementOffset.top) {
+      if (!this.affixed && scrollTop > elementOffset.top) {
         this.affixed = true;
         this.styles = {
           top: `${this.offsets}px`,
