@@ -21,7 +21,6 @@ export default {
       default: '',
     },
   },
-
   data() {
     return {
       affixed: false,
@@ -30,7 +29,6 @@ export default {
       wrapStyle: {},
     };
   },
-
   methods: {
     getScroll(w, top) {
       let ret = w[`page${(top ? 'Y' : 'X')}Offset`];
