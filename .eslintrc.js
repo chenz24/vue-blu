@@ -37,6 +37,7 @@ module.exports = {
     'no-eval': 0,
     'no-plusplus': 0,
     'consistent-return': 0,
+    'linebreak-style': 0
   },
   'globals': {
     "window": true,

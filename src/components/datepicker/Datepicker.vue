@@ -10,7 +10,7 @@
       <a class="button" data-clear><i class="fa fa-close"></i></a>
     </span>
     <p class="control has-icon has-icon-right" v-else>
-      <input class="input" :name="name" :value="interVal" :placeholder="placeholder" type="text" v-model="interVal" ref="pickrInput">
+      <input class="input" :name="name" :placeholder="placeholder" type="text" v-model="interVal" ref="pickrInput">
       <i class="fa fa-calendar"></i>
       <i class="fa fa-times" @click.prevent="handleClear"></i>
     </p>
