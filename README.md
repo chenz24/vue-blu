@@ -5,7 +5,7 @@ Finally, I have time. Next, I will work with the original author to maintain thi
 
 ~~近期其他事过于繁忙，以致没时间维护这个库了。很抱歉，不能更新和回答大家的问题。我会在大约两个月后回来继续更新维护它。谢谢大家的支持！(20170526)~~
 
-终于有时间了 接下来我和原作者共同维护这个卡，欢迎大家使用和支持 
+终于有时间了 接下来我和原作者共同维护这个库，欢迎大家使用和支持 
 
 # Vue-Blu
 Vue-Blu is an ui components library base on VueJS and Bulma that helps you build your web application easily
