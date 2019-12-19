@@ -5,7 +5,8 @@
  * Released under the MIT License.
  * Documentation: https://github.com/asika32764/vue2-animate
  */
-$transition-speed: .3s !default
+$transition-speed: .3s !default;
+
 @keyframes bounceIn {
   from,
   20%,
