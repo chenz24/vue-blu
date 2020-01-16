@@ -1,7 +1,7 @@
 <template>
   <div class="card is-fullwidth collapse-item" :class="{ 'is-active': isOpen }">
     <header class="card-header" @click="toggle">
-      <div class="card-header-title">{{ title }}</div>
+      <div class="card-header-title" v-html="title"></div>
       <span class="card-header-icon"><i class="fa fa-angle-right"></i></span>
     </header>
     <transition name="">
