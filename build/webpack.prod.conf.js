@@ -6,6 +6,7 @@ var merge = require('webpack-merge')
 var baseWebpackConfig = require('./webpack.base.conf')
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
+var FontPreloadPlugin = require('webpack-font-preload-plugin')
 var env = process.env.NODE_ENV === 'testing'
   ? require('../config/test.env')
   : config.build.env
@@ -35,6 +36,11 @@ var webpackConfig = merge(baseWebpackConfig, {
       compress: {
         warnings: false
       }
+    }),
+    new FontPreloadPlugin({
+      extensions: ['woff', 'ttf', 'eot'],
+      crossorigin: true,
+      loadType: 'preload',
     }),
     new webpack.optimize.OccurenceOrderPlugin(),
     // extract css into its own file
