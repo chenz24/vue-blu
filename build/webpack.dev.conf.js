@@ -4,6 +4,7 @@ var merge = require('webpack-merge')
 var utils = require('./utils')
 var baseWebpackConfig = require('./webpack.base.conf')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
+var PreloadWebpackPlugin = require('preload-webpack-plugin')
 
 // add hot-reload related code to entry chunks
 Object.keys(baseWebpackConfig.entry).forEach(function (name) {
@@ -29,6 +30,12 @@ module.exports = merge(baseWebpackConfig, {
       filename: 'index.html',
       template: 'index.html',
       inject: true
+    }),
+    new PreloadWebpackPlugin({
+        rel: 'preload',
+        as: 'font',
+        include: 'allAssets',
+        fileWhitelist: [/\.(woff2?|eot|ttf|otf)(\?.*)?$/i],
     })
   ]
 })
