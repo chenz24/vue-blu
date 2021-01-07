@@ -64,7 +64,6 @@ var webpackConfig = merge(baseWebpackConfig, {
         as: 'font',
         include: 'allAssets',
         fileWhitelist: [/\.(woff2?|eot|ttf|otf)(\?.*)?$/i],
-
     }),
     // split vendor js into its own file
     new webpack.optimize.CommonsChunkPlugin({
