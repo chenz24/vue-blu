@@ -2,7 +2,10 @@
 I'm very sorry about the lack of concern about this library Recently. So busy in doing other things and I have no time to  maintain it. I will be back in 2 about months. Thanks everyone!(20191203)
 
 近期其他事过于繁忙，以致没时间维护这个库了。很抱歉，不能更新和回答大家的问题。我会在大约两个月后回来继续更新维护它。谢谢大家的支持！(20191203)
+- 如果有相关技术问题，可以加我v：baidudw
 
+
+#
 
 # Vue-Blu
 Vue-Blu is an ui components library base on VueJS and Bulma that helps you build your web application easily
