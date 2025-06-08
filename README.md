@@ -62,3 +62,5 @@ Code and documentation copyright 2017 **Chenz**. Code released under the [MIT li
 
 ## TODO
 Migrate to Vue 3.x in future.
+
+[![Powered by DartNode](https://dartnode.com/branding/DN-Open-Source-sm.png)](https://dartnode.com "Powered by DartNode - Free VPS for Open Source")
