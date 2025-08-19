@@ -91,11 +91,15 @@ export default {
 
   methods: {
     handleOk(e) {
-      this.onOk();
+   //   this.onOk();
+              this.$emit('popconfirm');
+
       this.handleClose(e);
     },
     handleCancel(e) {
-      this.onCancel();
+  //    this.onCancel();
+          this.$emit('popcancel');
+
       this.handleClose(e);
     },
     handleClose(e) {
